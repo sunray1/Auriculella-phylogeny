@@ -40,23 +40,27 @@ The following software tools are managed within the Conda environment:
 
 ```bash
 git clone https://github.com/yourusername/auriculella-phylogeny.git
-cd auriculella-phylogeny```
+cd auriculella-phylogeny
+```
 
 ### Create and activate the Conda environment
 ```bash
 conda env create -f environment.yml
-conda activate auriculella```
+conda activate auriculella
+```
 
 ### Usage
 To execute the full pipeline:
 
 ```bash
-make```
+make
+```
 
 This will produce a collapsed, species-labeled tree in:
 
 ```bash
-outputs/08_tree_collapsed/auriculella_species_collapsed.tre```
+outputs/08_tree_collapsed/auriculella_species_collapsed.tre
+```
 
 Intermediate results, logs, and alignments are organized under the outputs/ directory by processing stage.
 
@@ -70,7 +74,8 @@ outputs/
 ├── 05_tree/                   # IQ-TREE inference
 ├── 06_tree_rooted/            # Rooted tree (MRCA of outgroup)
 ├── 07_tree_species_renamed/   # Tree with species-only tip labels
-└── 08_tree_collapsed/         # Final collapsed phylogeny```
+└── 08_tree_collapsed/         # Final collapsed phylogeny
+```
 
 ### Notes
 * Only high-confidence records are retained (e.g., species-level IDs excluding Auriculella_sp, and excluding GenBank records with processid beginning GB).
