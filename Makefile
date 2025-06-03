@@ -51,7 +51,7 @@ outputs/04_supermatrix/FcC_supermatrix.fas: outputs/03_alignment/done
 # Step 05: Build tree from the supermatrix
 outputs/05_tree/auriculella_phylogeny.tre: outputs/04_supermatrix/FcC_supermatrix.fas
 	mkdir -p outputs/05_tree
-	iqtree -s outputs/04_supermatrix/FcC_supermatrix.fas -nt AUTO -bb 1000 -pre outputs/05_tree/auriculella_phylogeny
+	iqtree -s outputs/04_supermatrix/FcC_supermatrix.fas -redo -nt AUTO -bb 1000 -pre outputs/05_tree/auriculella_phylogeny
 	mv outputs/05_tree/auriculella_phylogeny.treefile outputs/05_tree/auriculella_phylogeny.tre
 
 # Step 06: Re-root tree using MRCA of three outgroup tips
