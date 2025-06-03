@@ -3,34 +3,34 @@ all: outputs/08_tree_collapsed/auriculella_species_collapsed.tre
 
 # Step 01A: Download Auriculella
 # Genbank has the same sequences
-outputs/01_download/auriculella.json:
-	mkdir -p outputs/01_download
+outputs/01_download_files/auriculella.json:
+	mkdir -p outputs/01_download_files
 	curl -s "https://portal.boldsystems.org/api/query/preprocessor?query=tax:Auriculella" \
 	| jq -r '.successful_terms[0].matched' \
 	| xargs -I{} curl -s "https://portal.boldsystems.org/api/query?query={}" \
 	| jq -r '.query_id' \
-	| xargs -I{} curl -s -o outputs/01_download/auriculella.json \
+	| xargs -I{} curl -s -o outputs/01_download_files/auriculella.json \
 	"https://portal.boldsystems.org/api/documents/{}/download?format=json"
 
 # Step 01B: Download Tornatellidinae
 # Use this for rooting
-outputs/01_download/tornatellidinae.json:
-	mkdir -p outputs/01_download
+outputs/01_download_files/tornatellidinae.json:
+	mkdir -p outputs/01_download_files
 	curl -s "https://portal.boldsystems.org/api/query/preprocessor?query=tax:Tornatellidinae" \
 	| jq -r '.successful_terms[0].matched' \
 	| xargs -I{} curl -s "https://portal.boldsystems.org/api/query?query={}" \
 	| jq -r '.query_id' \
-	| xargs -I{} curl -s -o outputs/01_download/tornatellidinae.json \
+	| xargs -I{} curl -s -o outputs/01_download_files/tornatellidinae.json \
 	"https://portal.boldsystems.org/api/documents/{}/download?format=json"
 
 # Step 01C: Concatenate both JSON files
-outputs/01_download/auriculella_tornatellidinae.json: outputs/01_download/auriculella.json outputs/01_download/tornatellidinae.json
-	cat outputs/01_download/auriculella.json outputs/01_download/tornatellidinae.json > outputs/01_download/auriculella_tornatellidinae.json
+outputs/01_download_files/auriculella_tornatellidinae.json: outputs/01_download_files/auriculella.json outputs/01_download_files/tornatellidinae.json
+	cat outputs/01_download_files/auriculella.json outputs/01_download_files/tornatellidinae.json > outputs/01_download_files/auriculella_tornatellidinae.json
 
 # Step 02: Convert to FASTA (filtered and summarized)
-outputs/02_fasta/done: outputs/01_download/auriculella_tornatellidinae.json
+outputs/02_fasta/done: outputs/01_download_files/auriculella_tornatellidinae.json
 	mkdir -p outputs/02_fasta
-	./scripts/json_to_fasta.py outputs/01_download/auriculella_tornatellidinae.json outputs/02_fasta
+	./scripts/json_to_fasta.py outputs/01_download_files/auriculella_tornatellidinae.json outputs/02_fasta
 	touch outputs/02_fasta/done
 
 # Step 03: Align each locus
