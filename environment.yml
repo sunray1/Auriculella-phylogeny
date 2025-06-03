@@ -1,0 +1,53 @@
+name: auriculella
+channels:
+  - bioconda
+  - anaconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=5.1
+  - biopython=1.78
+  - blas=1.0
+  - bzip2=1.0.8
+  - ca-certificates=2025.2.25
+  - expat=2.7.1
+  - icu=58.2
+  - intel-openmp=2023.1.0
+  - iqtree=2.1.4_beta
+  - jq=1.5
+  - ld_impl_linux-64=2.40
+  - libffi=3.4.4
+  - libgcc=7.2.0
+  - libgcc-ng=11.2.0
+  - libgomp=11.2.0
+  - libstdcxx-ng=11.2.0
+  - libuuid=1.41.5
+  - libxcb=1.17.0
+  - libxml2=2.9.14
+  - mafft=7.505
+  - mkl=2023.1.0
+  - mkl-service=2.4.0
+  - mkl_fft=1.3.11
+  - mkl_random=1.2.8
+  - ncurses=6.4
+  - newick_utils=1.6
+  - numpy=2.2.5
+  - numpy-base=2.2.5
+  - openssl=3.0.16
+  - pip=25.1
+  - pthread-stubs=0.3
+  - python=3.12.9
+  - readline=8.2
+  - setuptools=72.1.0
+  - sqlite=3.45.3
+  - tbb=2021.8.0
+  - tk=8.6.14
+  - tzdata=2025b
+  - wheel=0.45.1
+  - xorg-libx11=1.8.12
+  - xorg-libxau=1.0.12
+  - xorg-libxdmcp=1.1.5
+  - xorg-xorgproto=2024.1
+  - xz=5.6.4
+  - zlib=1.2.13
+prefix: /home/sunray1/anaconda3/envs/auriculella
