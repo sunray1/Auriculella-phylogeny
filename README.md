@@ -4,6 +4,15 @@ This repository implements a reproducible bioinformatics workflow for generating
 
 The workflow is executed via GNU Make and is fully containerized within a Conda environment to ensure reproducibility across platforms.
 
+## Reference
+
+This pipeline conceptually replicates the phylogenetic analysis presented in:
+
+> Yeung, N. W., & Hayes, K. A. (2020).  
+> Overlooked but not forgotten: the first new extant species of Hawaiian land snail described in 60 years, *Auriculella gagneorum* sp. nov. (Achatinellidae, Auriculellinae).  
+> *ZooKeys*, 915: 137–162.  
+> [https://doi.org/10.3897/zookeys.915.50669](https://doi.org/10.3897/zookeys.915.50669)
+
 ## Overview
 
 The pipeline performs the following steps:
