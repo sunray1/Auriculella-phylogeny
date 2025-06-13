@@ -1,7 +1,7 @@
 name: auriculella
 channels:
+  - conda-forge
   - bioconda
-  - anaconda
   - defaults
 dependencies:
   - _libgcc_mutex=0.1
@@ -10,16 +10,17 @@ dependencies:
   - blas=1.0
   - bzip2=1.0.8
   - ca-certificates=2025.2.25
+  - clipkit=1.4.1
   - expat=2.7.1
   - icu=58.2
   - intel-openmp=2023.1.0
   - iqtree=2.1.4_beta
-  - jq=1.5
+  - jq=1.8.0
   - ld_impl_linux-64=2.40
   - libffi=3.4.4
-  - libgcc=7.2.0
-  - libgcc-ng=11.2.0
-  - libgomp=11.2.0
+  - libgcc=15.1.0
+  - libgcc-ng=15.1.0
+  - libgomp=15.1.0
   - libstdcxx-ng=11.2.0
   - libuuid=1.41.5
   - libxcb=1.17.0
@@ -31,17 +32,19 @@ dependencies:
   - mkl_random=1.2.8
   - ncurses=6.4
   - newick_utils=1.6
-  - numpy=2.2.5
-  - numpy-base=2.2.5
+  - numpy=1.26.4
+  - numpy-base=1.26.4
+  - oniguruma=6.9.10
   - openssl=3.0.16
   - pip=25.1
   - pthread-stubs=0.3
-  - python=3.12.9
+  - python=3.12.11
   - readline=8.2
-  - setuptools=72.1.0
+  - setuptools=78.1.1
   - sqlite=3.45.3
   - tbb=2021.8.0
   - tk=8.6.14
+  - tqdm=4.67.1
   - tzdata=2025b
   - wheel=0.45.1
   - xorg-libx11=1.8.12

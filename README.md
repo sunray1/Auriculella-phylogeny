@@ -18,14 +18,23 @@ This pipeline conceptually replicates the phylogenetic analysis presented in:
 The pipeline performs the following steps:
 
 1. Query BOLD for sequences from *Auriculella* and relevant outgroup taxa (*Tornatellidinae*).
-2. Parse and filter BOLD records, excluding ambiguous taxa and GenBank imports.
-3. Write filtered sequences to FASTA format, grouped by marker (e.g., 16S, COI).
-4. Perform multiple sequence alignment with MAFFT for each locus.
-5. Concatenate alignments into a supermatrix using FASconCAT-G.
-6. Infer a maximum likelihood phylogeny using IQ-TREE.
-7. Root the tree using an explicit outgroup (MRCA of selected *Tornatellidinae* tips).
-8. Rename tip labels to species names.
-9. Collapse redundant tips by species to produce a simplified tree.
+2. Write filtered sequences to FASTA format, grouped by marker (e.g., 16S, COI).
+3. Perform multiple sequence alignment with MAFFT for each locus.
+    - Includes a manual verification pause where the user can inspect and adjust alignments (e.g., check reading frames) before concatenation.
+4. Concatenate alignments into a supermatrix using FASconCAT-G.
+5. Run maximum likelihood inference using IQ-TREE across five different model schemes:
+
+    * No partitioning
+    * No partitioning with site filtering (removing gappy (>.9) and uninformative sites)
+    * Partitioning by locus
+    * Partitioning by locus with site filtering
+    * Partitioning by locus with COI codon positions
+
+    Log-likelihoods for all trees are computed, and the best-supported topology is selected automatically.
+
+6. Root the tree using an explicit outgroup (MRCA of selected *Tornatellidinae* tips).
+7. Rename tip labels to species names.
+8. Collapse redundant tips by species to produce a simplified tree.
 
 ## Requirements
 
@@ -37,6 +46,7 @@ The following software tools are managed within the Conda environment:
 
 - mafft
 - iqtree
+- clipkit
 - perl (for FASconCAT-G)
 - python (>=3.7) with `biopython`
 - jq
