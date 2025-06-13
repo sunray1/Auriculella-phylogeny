@@ -1,0 +1,488 @@
+IQ-TREE 2.1.4-beta COVID-edition built Jun 24 2021
+
+Input file name: outputs/04_supermatrix/filtered/FcC_supermatrix.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 631452
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 54 sequences with 488 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 488
+Number of distinct site patterns: 195
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+ASC+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+ASC+R2      -5450.177   11130.354 +    0.522   11202.074 +    0.819   11612.240 +    0.945
+GTR+F+ASC+G4      -5457.143   11142.286 -  0.00134   11212.581 -  0.00428   11619.982 -   0.0197
+TIM2+F+ASC+R2     -5460.419   11146.838 - 0.000138   11215.726 - 0.000889   11620.344 -   0.0164
+GTR+F+ASC+R3      -5448.271   11130.542 +    0.475   11205.169 +    0.174   11620.808 -    0.013
+TVM+F+ASC+R2      -5459.154   11146.309 - 0.000179   11216.604 - 0.000573   11624.005 -  0.00264
+TN+F+ASC+R2       -5466.321   11156.642 - 1.02e-06   11224.141 - 1.32e-05   11625.958 - 0.000993
+TIM2+F+ASC+G4     -5466.769   11157.539 - 6.53e-07   11225.037 - 8.45e-06   11626.854 - 0.000634
+TIM3+F+ASC+R2     -5463.716   11153.431 - 5.09e-06   11222.319 - 3.29e-05   11626.937 - 0.000608
+TVM+F+ASC+G4      -5465.130   11156.260 - 1.24e-06   11225.148 -    8e-06   11629.766 - 0.000148
+TIM2+F+ASC+R3     -5459.043   11148.086 - 7.37e-05   11219.807 - 0.000116   11629.973 - 0.000133
+TVM+F+ASC+R3      -5456.045   11144.090 - 0.000543   11217.255 - 0.000414   11630.167 - 0.000121
+TN+F+ASC+G4       -5471.673   11165.347 - 1.32e-08   11231.474 - 3.38e-07   11630.472 - 0.000104
+TPM2u+F+ASC+R2    -5469.149   11162.298 - 6.04e-08   11229.796 - 7.83e-07   11631.613 - 5.87e-05
+TPM2+F+ASC+R2     -5469.149   11162.298 - 6.04e-08   11229.796 - 7.83e-07   11631.613 - 5.87e-05
+TIM+F+ASC+R2      -5466.235   11158.470 -  4.1e-07   11227.357 - 2.65e-06   11631.975 -  4.9e-05
+TIM3+F+ASC+G4     -5469.375   11162.750 - 4.82e-08   11230.249 - 6.24e-07   11632.066 - 4.68e-05
+TN+F+ASC+R3       -5464.993   11157.985 - 5.22e-07   11228.280 - 1.67e-06   11635.681 - 7.68e-06
+TPM2+F+ASC+G4     -5474.378   11170.756 -  8.8e-10   11236.884 - 2.26e-08   11635.881 - 6.95e-06
+TPM2u+F+ASC+G4    -5474.378   11170.756 -  8.8e-10   11236.884 - 2.26e-08   11635.881 - 6.95e-06
+TIM3+F+ASC+R3     -5462.167   11154.333 - 3.24e-06   11226.054 - 5.09e-06   11636.219 - 5.87e-06
+TIM+F+ASC+G4      -5471.591   11167.183 - 5.26e-09   11234.681 - 6.81e-08   11636.498 -  5.1e-06
+HKY+F+ASC+R2      -5475.021   11172.041 - 4.63e-10   11238.169 - 1.19e-08   11637.166 - 3.65e-06
+TPM3+F+ASC+R2     -5472.261   11168.522 - 2.69e-09   11236.021 - 3.48e-08   11637.837 - 2.61e-06
+TPM3u+F+ASC+R2    -5472.261   11168.522 - 2.69e-09   11236.021 - 3.48e-08   11637.837 - 2.61e-06
+TPM2+F+ASC+R3     -5466.354   11160.709 - 1.34e-07   11231.004 - 4.28e-07   11638.405 - 1.97e-06
+TPM2u+F+ASC+R3    -5466.354   11160.709 - 1.34e-07   11231.004 - 4.28e-07   11638.405 - 1.97e-06
+HKY+F+ASC+G4      -5478.845   11177.691 - 2.75e-11   11242.465 - 1.39e-09   11638.626 - 1.76e-06
+TPM3u+F+ASC+G4    -5476.068   11174.135 - 1.63e-10   11240.263 - 4.18e-09   11639.260 - 1.28e-06
+TPM3+F+ASC+G4     -5476.068   11174.135 - 1.63e-10   11240.263 - 4.18e-09   11639.260 - 1.28e-06
+TIM+F+ASC+R3      -5464.850   11159.700 - 2.21e-07   11231.421 - 3.47e-07   11641.587 - 4.01e-07
+K3Pu+F+ASC+R2     -5474.869   11173.739 - 1.98e-10   11241.237 - 2.57e-09   11643.054 - 1.92e-07
+TPM3+F+ASC+R3     -5468.963   11165.927 - 9.85e-09   11236.222 - 3.15e-08   11643.623 - 1.45e-07
+TPM3u+F+ASC+R3    -5468.963   11165.927 - 9.85e-09   11236.222 - 3.15e-08   11643.623 - 1.45e-07
+HKY+F+ASC+R3      -5472.075   11170.150 - 1.19e-09   11239.038 - 7.71e-09   11643.656 - 1.42e-07
+K3Pu+F+ASC+G4     -5478.686   11179.373 - 1.18e-11   11245.500 - 3.04e-10   11644.498 - 9.35e-08
+K3Pu+F+ASC+R3     -5471.902   11171.804 - 5.21e-10   11242.099 - 1.67e-09   11649.500 - 7.67e-09
+GTR+F+R2          -5538.412   11306.824 -  2.5e-39   11378.545 - 3.92e-39   11788.711 - 4.52e-39
+GTR+F+R3          -5532.958   11299.916 -  7.9e-38   11374.543 -  2.9e-38   11790.183 - 2.17e-39
+TIM2+F+R2         -5546.172   11318.344 - 7.88e-42   11387.232 - 5.09e-41   11791.850 - 9.41e-40
+GTR+F+G4          -5544.358   11316.717 - 1.78e-41   11387.012 - 5.68e-41   11794.413 - 2.61e-40
+TN+F+R2           -5550.620   11325.240 - 2.51e-43   11392.739 - 3.24e-42   11794.556 - 2.43e-40
+TIM3+F+R2         -5548.911   11323.822 - 5.09e-43   11392.709 - 3.29e-42   11797.327 - 6.09e-41
+TVM+F+R2          -5546.142   11320.284 - 2.99e-42   11390.579 - 9.55e-42   11797.980 - 4.39e-41
+TIM2+F+G4         -5553.117   11330.234 - 2.06e-44   11397.733 - 2.67e-43   11799.549 -    2e-41
+TIM2+F+R3         -5544.018   11318.035 - 9.19e-42   11389.756 - 1.44e-41   11799.922 - 1.66e-41
+TIM+F+R2          -5550.573   11327.146 - 9.66e-44   11396.034 - 6.24e-43   11800.652 - 1.15e-41
+TN+F+G4           -5556.798   11335.596 - 1.41e-45   11401.723 - 3.63e-44   11800.721 - 1.12e-41
+TVM+F+R3          -5541.874   11315.748 - 2.88e-41   11388.912 -  2.2e-41   11801.824 - 6.42e-42
+TIM3+F+G4         -5555.254   11334.508 - 2.43e-45   11402.006 - 3.15e-44   11803.823 - 2.36e-42
+TPM2+F+R2         -5555.463   11334.927 - 1.97e-45   11402.425 - 2.56e-44   11804.242 - 1.92e-42
+TPM2u+F+R2        -5555.463   11334.927 - 1.97e-45   11402.425 - 2.56e-44   11804.242 - 1.92e-42
+TIM3+F+R3         -5546.383   11322.766 - 8.63e-43   11394.487 - 1.35e-42   11804.653 - 1.56e-42
+TN+F+R3           -5550.128   11328.255 - 5.55e-44   11398.550 - 1.78e-43   11805.951 - 8.16e-43
+TVM+F+G4          -5553.406   11332.813 - 5.68e-45   11401.700 - 3.67e-44   11806.318 - 6.79e-43
+HKY+F+R2          -5559.714   11341.429 - 7.65e-47   11407.556 - 1.97e-45   11806.554 - 6.04e-43
+TIM+F+G4          -5556.797   11337.595 -  5.2e-46   11405.094 - 6.73e-45   11806.910 - 5.05e-43
+TPM3+F+R2         -5557.770   11339.540 - 1.97e-46   11407.039 - 2.55e-45   11808.855 - 1.91e-43
+TPM3u+F+R2        -5557.770   11339.540 - 1.97e-46   11407.039 - 2.55e-45   11808.855 - 1.91e-43
+TPM2+F+G4         -5561.921   11345.841 - 8.42e-48   11411.969 - 2.16e-46   11810.966 - 6.65e-44
+TPM2u+F+G4        -5561.921   11345.841 - 8.42e-48   11411.969 - 2.16e-46   11810.966 - 6.65e-44
+HKY+F+G4          -5565.139   11350.279 - 9.16e-49   11415.053 - 4.63e-47   11811.214 - 5.87e-44
+TIM+F+R3          -5549.964   11329.928 -  2.4e-44   11401.649 - 3.77e-44   11811.815 - 4.35e-44
+K3Pu+F+R2         -5559.622   11343.244 - 3.09e-47   11410.742 -    4e-46   11812.559 -    3e-44
+TPM3+F+G4         -5563.059   11348.117 -  2.7e-48   11414.245 - 6.94e-47   11813.242 - 2.13e-44
+TPM3u+F+G4        -5563.059   11348.117 -  2.7e-48   11414.245 - 6.94e-47   11813.242 - 2.13e-44
+TPM2u+F+R3        -5555.505   11339.011 - 2.56e-46   11409.306 -  8.2e-46   11816.707 - 3.77e-45
+TPM2+F+R3         -5555.505   11339.011 - 2.56e-46   11409.306 -  8.2e-46   11816.707 - 3.77e-45
+K3Pu+F+G4         -5565.145   11352.290 - 3.35e-49   11418.418 - 8.61e-48   11817.415 - 2.64e-45
+HKY+F+R3          -5559.427   11344.855 - 1.38e-47   11413.743 - 8.92e-47   11818.361 - 1.65e-45
+TPM3+F+R3         -5557.276   11342.552 - 4.36e-47   11412.847 -  1.4e-46   11820.248 - 6.41e-46
+TPM3u+F+R3        -5557.276   11342.552 - 4.36e-47   11412.847 -  1.4e-46   11820.248 - 6.41e-46
+K3Pu+F+R3         -5559.227   11346.454 -  6.2e-48   11416.749 - 1.98e-47   11824.150 - 9.12e-47
+GTR+F+ASC         -5580.563   11387.125 - 9.13e-57   11456.013 - 5.91e-56   11860.631 - 1.09e-54
+GTR+F             -5623.924   11473.848 - 1.35e-75   11542.736 -  8.7e-75   11947.354 - 1.61e-73
+SYM+ASC+R3        -5815.489   11858.978 - 3.16e-159   11929.273 - 1.01e-158   12336.674 - 4.64e-158
+SYM+ASC+R2        -5821.868   11867.736 - 3.96e-161   11935.235 - 5.12e-160   12337.051 - 3.84e-158
+TVMe+ASC+R3       -5820.515   11867.030 - 5.63e-161   11935.917 - 3.64e-160   12340.535 - 6.73e-159
+TVMe+ASC+R2       -5831.220   11884.439 - 9.34e-165   11950.567 - 2.4e-163   12349.564 - 7.37e-161
+SYM+ASC+G4        -5836.785   11895.570 - 3.58e-167   11961.697 - 9.19e-166   12360.695 - 2.82e-163
+TVMe+ASC+G4       -5844.705   11909.410 - 3.53e-170   11974.185 - 1.79e-168   12370.345 - 2.26e-165
+TIMe+ASC+R2       -5844.876   11909.751 - 2.98e-170   11974.526 - 1.51e-168   12370.686 - 1.91e-165
+TIMe+ASC+R3       -5839.014   11902.027 - 1.42e-168   11969.526 - 1.83e-167   12371.343 - 1.38e-165
+K3P+ASC+R3        -5844.368   11910.737 - 1.82e-170   11976.864 - 4.68e-169   12375.862 - 1.44e-166
+TIMe+ASC+G4       -5851.781   11921.561 - 8.12e-173   11985.000 -   8e-171   12378.305 - 4.23e-167
+K3P+ASC+R2        -5855.619   11929.239 - 1.75e-174   11992.678 - 1.72e-172   12385.983 - 9.11e-169
+K3P+ASC+G4        -5860.144   11936.288 - 5.15e-176   11998.410 - 9.8e-174   12388.842 - 2.18e-169
+TIM3e+ASC+R2      -5861.531   11943.062 - 1.74e-177   12007.837 - 8.8e-176   12403.997 - 1.12e-172
+TIM3e+ASC+R3      -5856.577   11937.155 - 3.34e-176   12004.653 - 4.32e-175   12406.470 - 3.24e-173
+TIM3e+ASC+G4      -5874.314   11966.628 - 1.33e-182   12030.067 - 1.31e-180   12423.372 - 6.93e-177
+TIM2e+ASC+R3      -5868.162   11960.324 - 3.1e-181   12027.823 - 4.02e-180   12429.640 - 3.02e-178
+TIM2e+ASC+R2      -5875.638   11971.276 - 1.3e-183   12036.050 - 6.57e-182   12432.211 - 8.34e-179
+TIM2e+ASC+G4      -5881.726   11981.451 - 8.02e-186   12044.891 - 7.91e-184   12438.196 - 4.18e-180
+SYM+R2            -5874.947   11973.894 - 3.51e-184   12041.393 - 4.55e-183   12443.210 - 3.41e-181
+TIMe+R2           -5884.362   11988.724 - 2.11e-187   12053.499 - 1.07e-185   12449.659 - 1.36e-182
+SYM+R3            -5874.947   11977.894 - 4.75e-185   12048.189 - 1.52e-184   12455.590 - 6.99e-184
+TVMe+R2           -5885.021   11992.043 - 4.02e-188   12058.171 - 1.03e-186   12457.168 - 3.18e-184
+TIMe+R3           -5884.390   11992.781 - 2.78e-188   12060.279 - 3.6e-187   12462.096 - 2.7e-185
+TNe+ASC+R2        -5894.342   12006.684 - 2.66e-191   12070.123 - 2.62e-189   12463.428 - 1.39e-185
+K3P+R2            -5894.816   12007.632 - 1.66e-191   12071.071 - 1.63e-189   12464.376 - 8.64e-186
+TNe+ASC+R3        -5889.321   12000.643 - 5.46e-190   12066.770 - 1.4e-188   12465.768 - 4.31e-186
+TNe+ASC+G4        -5900.187   12016.373 - 2.09e-193   12078.495 - 3.99e-191   12468.928 - 8.87e-187
+TVMe+R3           -5885.098   11996.195 - 5.04e-189   12065.083 - 3.26e-188   12469.701 - 6.03e-187
+K2P+ASC+R3        -5895.173   12010.345 - 4.27e-192   12075.120 - 2.16e-190   12471.280 - 2.74e-187
+K3P+R3            -5894.860   12011.719 - 2.15e-192   12077.847 - 5.52e-191   12476.844 - 1.69e-188
+K2P+ASC+R2        -5905.563   12027.126 - 9.69e-196   12089.248 - 1.85e-193   12479.680 - 4.1e-189
+K2P+ASC+G4        -5908.690   12031.379 - 1.16e-196   12092.200 - 4.22e-194   12479.743 - 3.98e-189
+TIM3e+R2          -5907.210   12034.420 - 2.53e-197   12099.194 - 1.28e-195   12495.354 - 1.62e-192
+TIMe+G4           -5911.631   12041.263 - 8.25e-199   12104.702 - 8.13e-197   12498.007 - 4.3e-193
+SYM+G4            -5907.571   12037.143 - 6.47e-198   12103.270 - 1.66e-196   12502.268 - 5.11e-194
+TIM3e+R3          -5907.247   12038.495 - 3.29e-198   12105.993 - 4.26e-197   12507.810 - 3.2e-195
+TIM2e+R2          -5914.786   12049.572 - 1.29e-200   12114.347 - 6.55e-199   12510.507 - 8.3e-196
+K3P+G4            -5922.331   12060.663 - 5.06e-203   12122.784 - 9.63e-201   12513.217 - 2.14e-196
+TVMe+G4           -5918.157   12056.314 - 4.45e-202   12121.089 - 2.25e-200   12517.249 - 2.85e-197
+TIM2e+R3          -5914.786   12053.573 - 1.75e-201   12121.071 - 2.27e-200   12522.888 - 1.7e-198
+TNe+R2            -5926.590   12071.179 - 2.63e-205   12134.618 - 2.59e-203   12527.923 - 1.37e-199
+TNe+R3            -5926.632   12075.265 - 3.41e-206   12141.392 - 8.77e-205   12540.390 - 2.69e-202
+K2P+R2            -5936.545   12089.090 - 3.4e-209   12151.211 - 6.47e-207   12541.644 - 1.44e-202
+TIM3e+G4          -5936.330   12090.659 - 1.55e-209   12154.098 - 1.53e-207   12547.403 - 8.08e-204
+TIM2e+G4          -5939.294   12096.588 - 7.99e-211   12160.027 - 7.88e-209   12553.333 - 4.17e-205
+K2P+R3            -5936.533   12093.067 - 4.65e-210   12157.841 - 2.35e-208   12554.001 - 2.98e-205
+TNe+G4            -5949.921   12115.841 - 5.27e-215   12177.963 -   1e-212   12568.395 - 2.23e-208
+K2P+G4            -5960.272   12134.543 - 4.58e-219   12195.364 - 1.67e-216   12582.907 - 1.58e-211
+JC+ASC+R2         -6263.930   12741.860 -        0   12802.681 -        0   13190.223 -        0
+JC+ASC+R3         -6260.315   12738.630 -        0   12802.070 -        0   13195.375 -        0
+JC+ASC+G4         -6273.135   12758.270 -        0   12817.808 -        0   13202.443 -        0
+F81+F+ASC+G4      -6276.571   12771.141 -        0   12834.581 -        0   13227.886 -        0
+F81+F+ASC+R3      -6270.124   12764.248 -        0   12831.747 -        0   13233.563 -        0
+F81+F+ASC+R2      -6277.922   12775.844 -        0   12840.618 -        0   13236.778 -        0
+JC+R2             -6304.809   12823.618 -        0   12884.439 -        0   13271.982 -        0
+JC+R3             -6304.810   12827.619 -        0   12891.058 -        0   13284.364 -        0
+JC+G4             -6336.660   12885.320 -        0   12944.858 -        0   13329.494 -        0
+F81+F+G4          -6328.215   12874.430 -        0   12937.869 -        0   13331.174 -        0
+F81+F+R2          -6327.289   12874.578 -        0   12939.352 -        0   13335.512 -        0
+F81+F+R3          -6326.129   12876.258 -        0   12943.757 -        0   13345.574 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC+R2
+
+Rate parameter R:
+
+  A-C: 0.4374
+  A-G: 21.8489
+  A-T: 0.7695
+  C-G: 6.4124
+  C-T: 14.4157
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3682
+  pi(C) = 0.08488
+  pi(G) = 0.08299
+  pi(T) = 0.4639
+
+Rate matrix Q:
+
+  A   -0.7538   0.01268    0.6192    0.1219
+  C     0.055    -2.521    0.1817     2.284
+  G     2.747    0.1859    -3.092    0.1584
+  T   0.09677    0.4179   0.02834    -0.543
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.4712,0.1272) (0.5288,1.778)
+
+ Category  Relative_rate  Proportion
+  1         0.1272         0.4712
+  2         1.778          0.5288
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5430.2243 (s.e. 164.9398)
+Unconstrained log-likelihood (without tree): -2485.8060
+Number of free parameters (#branches + #model parameters): 115
+Akaike information criterion (AIC) score: 11090.4487
+Corrected Akaike information criterion (AICc) score: 11162.1691
+Bayesian information criterion (BIC) score: 11572.3349
+
+Total tree length (sum of branch lengths): 13.0194
+Sum of internal branch lengths: 12.3279 (94.6891% of tree length)
+
+WARNING: 7 near-zero internal branches (<0.0020) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'ACHA009-20_HLS20647_Auriculella_tenella' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--ACHA009-20_HLS20647_Auriculella_tenella
+|
+|                          +--ACHA044-20_HLS20879_Auriculella_ambusta
+|                       +--| (96)
+|                       |  +--ACHA043-20_HLS21744_Auriculella_ambusta
+|                    +--| (94)
+|                    |  +**ACHA018-20_HLS20747_Auriculella_ambusta
+|                 +--| (92)
+|                 |  |  +--ACHA036-20_HLS20183_Auriculella_ambusta
+|                 |  +--| (100)
+|                 |     +--ACHA016-20_HLS20184_Auriculella_ambusta
+|              +--| (86)
+|              |  |     +--ACHA040-20_HLS21703_Auriculella_perpusilla
+|              |  |  +--| (97)
+|              |  |  |  +--ACHA008-20_HLS20187_Auriculella_perpusilla
+|              |  +--| (100)
+|              |     |  +**ACHA039-20_HLS21705_Auriculella_perpusilla
+|              |     +**| (76)
+|              |        +--ACHA005-20_HLS20091_Auriculella_perpusilla
+|           +--| (72)
+|           |  |     +--ACHA053-20_HLS21612_Auriculella_perversa
+|           |  |  +--| (100)
+|           |  |  |  +**ACHA052-20_HLS20232_Auriculella_perversa
+|           |  +--| (88)
+|           |     +--ACHA049-20_HLS21154_Auriculella_montana
+|        +--| (51)
+|        |  |           +--ACHA033-20_HLS20459_Auriculella_crassula
+|        |  |        +--| (99)
+|        |  |        |  +--ACHA013-20_HLS20458_Auriculella_crassula
+|        |  |     +--| (88)
+|        |  |     |  |  +--ACHA006-20_HLS20597_Auriculella_crassula
+|        |  |     |  +--| (100)
+|        |  |     |     +--ACHA003-20_HLS20637_Auriculella_crassula
+|        |  |  +--| (99)
+|        |  |  |  |     +**ACHA024-20_HLS20454_Auriculella_crassula
+|        |  |  |  |  +**| (63)
+|        |  |  |  |  |  +--ACHA004-20_HLS20609_Auriculella_crassula
+|        |  |  |  +--| (88)
+|        |  |  |     |  +--ACHA020-20_HLS20595_Auriculella_crassula
+|        |  |  |     +--| (100)
+|        |  |  |        +--ACHA023-20_HLS20607_Auriculella_crassula
+|        |  +--| (56)
+|        |     |     +--ACHA014-20_HLS20730_Auriculella_malleata
+|        |     |  +--| (95)
+|        |     |  |  |     +--ACHA041-20_HLS20731_Auriculella_malleata
+|        |     |  |  |  +--| (98)
+|        |     |  |  |  |  +--ACHA047-20_HLS20723_Auriculella_malleata
+|        |     |  |  +--| (97)
+|        |     |  |     +--ACHA007-20_HLS20655_Auriculella_malleata
+|        |     +--| (100)
+|        |        |  +**ACHA021-20_HLS21114_Auriculella_malleata
+|        |        +--| (93)
+|        |           +--ACHA038-20_HLS21113_Auriculella_malleata
+|     +--| (96)
+|     |  |     +--ACHA028-20_HLS20149_Auriculella_uniplicata
+|     |  |  +--| (82)
+|     |  |  |  |     +--ACHA032-20_HLS20127_Auriculella_uniplicata
+|     |  |  |  |  +--| (99)
+|     |  |  |  |  |  +--ACHA031-20_HLS20126_Auriculella_uniplicata
+|     |  |  |  +--| (99)
+|     |  |  |     +--ACHA035-20_HLS20702_Auriculella_uniplicata
+|     |  +--| (100)
+|     |     |  +--ACHA025-20_HLS20708_Auriculella_uniplicata
+|     |     +--| (100)
+|     |        |  +--ACHA037-20_HLS20131_Auriculella_uniplicata
+|     |        +--| (98)
+|     |           +--ACHA034-20_HLS20130_Auriculella_uniplicata
+|  +--| (81)
+|  |  |        +**ACHA030-20_HLS20153_Auriculella_turritella
+|  |  |     +--| (99)
+|  |  |     |  +--ACHA048-20_HLS20198_Auriculella_turritella
+|  |  |  +**| (56)
+|  |  |  |  |     +--ACHA026-20_HLS20336_Auriculella_turritella
+|  |  |  |  |  +--| (100)
+|  |  |  |  |  |  +**ACHA022-20_HLS20335_Auriculella_turritella
+|  |  |  |  +--| (76)
+|  |  |  |     +--ACHA045-20_HLS20816_Auriculella_turritella
+|  |  +--| (89)
+|  |     +--ACHA051-20_HLS20461_Auriculella_turritella
++--| (81)
+|  |                                                                  +**ACHA001-20_HLS20486_Tornatellaria_sp
+|  |           +------------------------------------------------------| (100)
+|  |           |                                                      |  +--ACHA002-20_HLS20002_Tornatellides_sp
+|  |           |                                                      +--| (100)
+|  |           |                                                         +--ACHA216-22_PCMB54681_Tornatellides_subperforatus
+|  |        +--| (50)
+|  |        |  +**ACHA042-20_HLS20524_Auriculella_tenella
+|  |     +--| (54)
+|  |     |  +**ACHA010-20_HLS20134_Auriculella_tenella
+|  |  +--| (79)
+|  |  |  +**ACHA019-20_HLS20347_Auriculella_tenella
+|  +**| (56)
+|     +--ACHA012-20_HLS20649_Auriculella_tenella
+|
+|           +--ACHA027-20_HLS20138_Auriculella_gagneorum
+|        +**| (19)
+|        |  +--ACHA046-20_HLS20536_Auriculella_gagneorum
+|     +**| (31)
+|     |  +**ACHA011-20_HLS20137_Auriculella_gagneorum
+|  +--| (100)
+|  |  +--ACHA050-20_HLS20539_Auriculella_gagneorum
++--| (100)
+   |     +**ACHA029-20_HLS20186_Auriculella_gagneorum
+   |  +**| (79)
+   |  |  +--ACHA015-20_HLS20185_Auriculella_gagneorum
+   +--| (99)
+      +--ACHA017-20_HLS20878_Auriculella_gagneorum
+
+Tree in newick format:
+
+(ACHA009-20_HLS20647_Auriculella_tenella:0.0153432280,(((((((((ACHA044-20_HLS20879_Auriculella_ambusta:0.0140879155,ACHA043-20_HLS21744_Auriculella_ambusta:0.0138284671)96:0.0043975782,ACHA018-20_HLS20747_Auriculella_ambusta:0.0000026172)94:0.0085498475,(ACHA036-20_HLS20183_Auriculella_ambusta:0.0092897569,ACHA016-20_HLS20184_Auriculella_ambusta:0.0069119533)100:0.0585492350)92:0.0212138661,((ACHA040-20_HLS21703_Auriculella_perpusilla:0.0094060638,ACHA008-20_HLS20187_Auriculella_perpusilla:0.0069493534)97:0.0088219262,(ACHA039-20_HLS21705_Auriculella_perpusilla:0.0000026247,ACHA005-20_HLS20091_Auriculella_perpusilla:0.0034134358)76:0.0018760958)100:0.0543603894)86:0.0267065026,((ACHA053-20_HLS21612_Auriculella_perversa:0.0036545106,ACHA052-20_HLS20232_Auriculella_perversa:0.0000025177)100:0.1742162806,ACHA049-20_HLS21154_Auriculella_montana:0.1180068781)88:0.0205711256)72:0.0153443005,((((ACHA033-20_HLS20459_Auriculella_crassula:0.0092483482,ACHA013-20_HLS20458_Auriculella_crassula:0.0263051686)99:0.0536052542,(ACHA006-20_HLS20597_Auriculella_crassula:0.0044708113,ACHA003-20_HLS20637_Auriculella_crassula:0.0408104213)100:0.0760633383)88:0.0157747387,((ACHA024-20_HLS20454_Auriculella_crassula:0.0000009998,ACHA004-20_HLS20609_Auriculella_crassula:0.0167270406)63:0.0000029820,(ACHA020-20_HLS20595_Auriculella_crassula:0.0046059961,ACHA023-20_HLS20607_Auriculella_crassula:0.0046421231)100:0.0141106758)88:0.0140270308)99:0.0545799407,((ACHA014-20_HLS20730_Auriculella_malleata:0.0040870989,((ACHA041-20_HLS20731_Auriculella_malleata:0.0154725742,ACHA047-20_HLS20723_Auriculella_malleata:0.0096071034)98:0.0049264947,ACHA007-20_HLS20655_Auriculella_malleata:0.0138014217)97:0.0048206191)95:0.0402916818,(ACHA021-20_HLS21114_Auriculella_malleata:0.0000020877,ACHA038-20_HLS21113_Auriculella_malleata:0.0154382943)93:0.0161231649)100:0.1464493085)56:0.0286243613)51:0.0138802380,((ACHA028-20_HLS20149_Auriculella_uniplicata:0.0262903701,((ACHA032-20_HLS20127_Auriculella_uniplicata:0.0044687875,ACHA031-20_HLS20126_Auriculella_uniplicata:0.0044942060)99:0.0088471236,ACHA035-20_HLS20702_Auriculella_uniplicata:0.0050156535)99:0.0366415331)82:0.0167606275,(ACHA025-20_HLS20708_Auriculella_uniplicata:0.0091422108,(ACHA037-20_HLS20131_Auriculella_uniplicata:0.0040091671,ACHA034-20_HLS20130_Auriculella_uniplicata:0.0154155371)98:0.0168263549)100:0.0555290606)100:0.1267161865)96:0.0403207669,(((ACHA030-20_HLS20153_Auriculella_turritella:0.0000022276,ACHA048-20_HLS20198_Auriculella_turritella:0.0044359784)99:0.0088534275,((ACHA026-20_HLS20336_Auriculella_turritella:0.0044300257,ACHA022-20_HLS20335_Auriculella_turritella:0.0000009998)100:0.0141196328,ACHA045-20_HLS20816_Auriculella_turritella:0.0093649464)76:0.0041836132)56:0.0000022822,ACHA051-20_HLS20461_Auriculella_turritella:0.0176029849)89:0.0869224355)81:0.0695021180,(((((ACHA001-20_HLS20486_Tornatellaria_sp:0.0000025225,(ACHA002-20_HLS20002_Tornatellides_sp:0.0825048799,ACHA216-22_PCMB54681_Tornatellides_subperforatus:0.0530472634)100:0.7242600300)100:9.9978244670,ACHA042-20_HLS20524_Auriculella_tenella:0.0009606546)50:0.0036349589,ACHA010-20_HLS20134_Auriculella_tenella:0.0000020420)54:0.0032766007,ACHA019-20_HLS20347_Auriculella_tenella:0.0000024856)79:0.0695977475,ACHA012-20_HLS20649_Auriculella_tenella:0.0244009220)56:0.0000023342)81:0.0083236679,((((ACHA027-20_HLS20138_Auriculella_gagneorum:0.0045446378,ACHA046-20_HLS20536_Auriculella_gagneorum:0.0045430428)19:0.0000020925,ACHA011-20_HLS20137_Auriculella_gagneorum:0.0000009998)31:0.0000020499,ACHA050-20_HLS20539_Auriculella_gagneorum:0.0045461243)100:0.0667871442,((ACHA029-20_HLS20186_Auriculella_gagneorum:0.0000009998,ACHA015-20_HLS20185_Auriculella_gagneorum:0.0036037007)79:0.0000020005,ACHA017-20_HLS20878_Auriculella_gagneorum:0.0425004918)99:0.0327056463)100:0.0584029725);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -5430.225400
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--ACHA009-20_HLS20647_Auriculella_tenella
+|
+|                          +--ACHA044-20_HLS20879_Auriculella_ambusta
+|                       +--| (96)
+|                       |  +--ACHA043-20_HLS21744_Auriculella_ambusta
+|                    +--| (94)
+|                    |  +--ACHA018-20_HLS20747_Auriculella_ambusta
+|                 +--| (92)
+|                 |  |  +--ACHA036-20_HLS20183_Auriculella_ambusta
+|                 |  +--| (100)
+|                 |     +--ACHA016-20_HLS20184_Auriculella_ambusta
+|              +--| (86)
+|              |  |     +--ACHA040-20_HLS21703_Auriculella_perpusilla
+|              |  |  +--| (97)
+|              |  |  |  +--ACHA008-20_HLS20187_Auriculella_perpusilla
+|              |  +--| (100)
+|              |     |  +--ACHA039-20_HLS21705_Auriculella_perpusilla
+|              |     +--| (76)
+|              |        +--ACHA005-20_HLS20091_Auriculella_perpusilla
+|           +--| (72)
+|           |  |     +--ACHA053-20_HLS21612_Auriculella_perversa
+|           |  |  +--| (100)
+|           |  |  |  +--ACHA052-20_HLS20232_Auriculella_perversa
+|           |  +--| (88)
+|           |     +--ACHA049-20_HLS21154_Auriculella_montana
+|        +--| (51)
+|        |  |           +--ACHA033-20_HLS20459_Auriculella_crassula
+|        |  |        +--| (99)
+|        |  |        |  +--ACHA013-20_HLS20458_Auriculella_crassula
+|        |  |     +--| (88)
+|        |  |     |  |  +--ACHA006-20_HLS20597_Auriculella_crassula
+|        |  |     |  +--| (100)
+|        |  |     |     +--ACHA003-20_HLS20637_Auriculella_crassula
+|        |  |  +--| (99)
+|        |  |  |  |     +--ACHA024-20_HLS20454_Auriculella_crassula
+|        |  |  |  |  +--| (63)
+|        |  |  |  |  |  +--ACHA004-20_HLS20609_Auriculella_crassula
+|        |  |  |  +--| (88)
+|        |  |  |     |  +--ACHA020-20_HLS20595_Auriculella_crassula
+|        |  |  |     +--| (100)
+|        |  |  |        +--ACHA023-20_HLS20607_Auriculella_crassula
+|        |  +--| (56)
+|        |     |     +--ACHA014-20_HLS20730_Auriculella_malleata
+|        |     |  +--| (95)
+|        |     |  |  |     +--ACHA041-20_HLS20731_Auriculella_malleata
+|        |     |  |  |  +--| (98)
+|        |     |  |  |  |  +--ACHA047-20_HLS20723_Auriculella_malleata
+|        |     |  |  +--| (97)
+|        |     |  |     +--ACHA007-20_HLS20655_Auriculella_malleata
+|        |     +--| (100)
+|        |        |  +--ACHA021-20_HLS21114_Auriculella_malleata
+|        |        +--| (93)
+|        |           +--ACHA038-20_HLS21113_Auriculella_malleata
+|     +--| (96)
+|     |  |     +--ACHA028-20_HLS20149_Auriculella_uniplicata
+|     |  |  +--| (82)
+|     |  |  |  |     +--ACHA032-20_HLS20127_Auriculella_uniplicata
+|     |  |  |  |  +--| (99)
+|     |  |  |  |  |  +--ACHA031-20_HLS20126_Auriculella_uniplicata
+|     |  |  |  +--| (99)
+|     |  |  |     +--ACHA035-20_HLS20702_Auriculella_uniplicata
+|     |  +--| (100)
+|     |     |  +--ACHA025-20_HLS20708_Auriculella_uniplicata
+|     |     +--| (100)
+|     |        |  +--ACHA037-20_HLS20131_Auriculella_uniplicata
+|     |        +--| (98)
+|     |           +--ACHA034-20_HLS20130_Auriculella_uniplicata
+|  +--| (81)
+|  |  |        +--ACHA030-20_HLS20153_Auriculella_turritella
+|  |  |     +--| (99)
+|  |  |     |  +--ACHA048-20_HLS20198_Auriculella_turritella
+|  |  |  +--| (56)
+|  |  |  |  |     +--ACHA026-20_HLS20336_Auriculella_turritella
+|  |  |  |  |  +--| (100)
+|  |  |  |  |  |  +--ACHA022-20_HLS20335_Auriculella_turritella
+|  |  |  |  +--| (76)
+|  |  |  |     +--ACHA045-20_HLS20816_Auriculella_turritella
+|  |  +--| (89)
+|  |     +--ACHA051-20_HLS20461_Auriculella_turritella
++--| (81)
+|  |                                                                  +--ACHA001-20_HLS20486_Tornatellaria_sp
+|  |           +------------------------------------------------------| (100)
+|  |           |                                                      |  +--ACHA002-20_HLS20002_Tornatellides_sp
+|  |           |                                                      +--| (100)
+|  |           |                                                         +--ACHA216-22_PCMB54681_Tornatellides_subperforatus
+|  |        +--| (50)
+|  |        |  +--ACHA042-20_HLS20524_Auriculella_tenella
+|  |     +--| (54)
+|  |     |  +--ACHA010-20_HLS20134_Auriculella_tenella
+|  |  +--| (79)
+|  |  |  +--ACHA019-20_HLS20347_Auriculella_tenella
+|  +--| (56)
+|     +--ACHA012-20_HLS20649_Auriculella_tenella
+|
+|           +--ACHA027-20_HLS20138_Auriculella_gagneorum
+|        +--| (46)
+|        |  +--ACHA050-20_HLS20539_Auriculella_gagneorum
+|     +--| (59)
+|     |  +--ACHA011-20_HLS20137_Auriculella_gagneorum
+|  +--| (100)
+|  |  +--ACHA046-20_HLS20536_Auriculella_gagneorum
++--| (100)
+   |     +--ACHA029-20_HLS20186_Auriculella_gagneorum
+   |  +--| (79)
+   |  |  +--ACHA015-20_HLS20185_Auriculella_gagneorum
+   +--| (99)
+      +--ACHA017-20_HLS20878_Auriculella_gagneorum
+
+
+Consensus tree in newick format: 
+
+(ACHA009-20_HLS20647_Auriculella_tenella:0.0153442255,(((((((((ACHA044-20_HLS20879_Auriculella_ambusta:0.0140882698,ACHA043-20_HLS21744_Auriculella_ambusta:0.0138273498)96:0.0043980029,ACHA018-20_HLS20747_Auriculella_ambusta:0.0000020068)94:0.0085671002,(ACHA036-20_HLS20183_Auriculella_ambusta:0.0092891963,ACHA016-20_HLS20184_Auriculella_ambusta:0.0069124714)100:0.0585314133)92:0.0212203340,((ACHA040-20_HLS21703_Auriculella_perpusilla:0.0094063841,ACHA008-20_HLS20187_Auriculella_perpusilla:0.0069490858)97:0.0088072616,(ACHA039-20_HLS21705_Auriculella_perpusilla:0.0000020033,ACHA005-20_HLS20091_Auriculella_perpusilla:0.0034128837)76:0.0018841483)100:0.0543519613)86:0.0266928952,((ACHA053-20_HLS21612_Auriculella_perversa:0.0036551696,ACHA052-20_HLS20232_Auriculella_perversa:0.0000020033)100:0.1742100741,ACHA049-20_HLS21154_Auriculella_montana:0.1180136840)88:0.0205695504)72:0.0153436240,((((ACHA033-20_HLS20459_Auriculella_crassula:0.0092464257,ACHA013-20_HLS20458_Auriculella_crassula:0.0263057290)99:0.0536044969,(ACHA006-20_HLS20597_Auriculella_crassula:0.0044766901,ACHA003-20_HLS20637_Auriculella_crassula:0.0408052170)100:0.0760560067)88:0.0157743844,((ACHA024-20_HLS20454_Auriculella_crassula:0.0000020033,ACHA004-20_HLS20609_Auriculella_crassula:0.0167271692)63:0.0000022924,(ACHA020-20_HLS20595_Auriculella_crassula:0.0046058659,ACHA023-20_HLS20607_Auriculella_crassula:0.0046419860)100:0.0141105647)88:0.0140324207)99:0.0545762748,((ACHA014-20_HLS20730_Auriculella_malleata:0.0040855407,((ACHA041-20_HLS20731_Auriculella_malleata:0.0154732628,ACHA047-20_HLS20723_Auriculella_malleata:0.0096072294)98:0.0049269967,ACHA007-20_HLS20655_Auriculella_malleata:0.0138014179)97:0.0048206915)95:0.0402886101,(ACHA021-20_HLS21114_Auriculella_malleata:0.0000020033,ACHA038-20_HLS21113_Auriculella_malleata:0.0154379713)93:0.0161278086)100:0.1464518176)56:0.0286250883)51:0.0138801041,((ACHA028-20_HLS20149_Auriculella_uniplicata:0.0262838289,((ACHA032-20_HLS20127_Auriculella_uniplicata:0.0044687394,ACHA031-20_HLS20126_Auriculella_uniplicata:0.0044941196)99:0.0088471129,ACHA035-20_HLS20702_Auriculella_uniplicata:0.0050154439)99:0.0366471776)82:0.0167635153,(ACHA025-20_HLS20708_Auriculella_uniplicata:0.0091505506,(ACHA037-20_HLS20131_Auriculella_uniplicata:0.0040103616,ACHA034-20_HLS20130_Auriculella_uniplicata:0.0154148506)98:0.0168195743)100:0.0555300263)100:0.1267099123)96:0.0403186575,(((ACHA030-20_HLS20153_Auriculella_turritella:0.0000020033,ACHA048-20_HLS20198_Auriculella_turritella:0.0044366826)99:0.0088540608,((ACHA026-20_HLS20336_Auriculella_turritella:0.0044305608,ACHA022-20_HLS20335_Auriculella_turritella:0.0000020033)100:0.0141205098,ACHA045-20_HLS20816_Auriculella_turritella:0.0093645628)76:0.0041822317)56:0.0000028317,ACHA051-20_HLS20461_Auriculella_turritella:0.0176022212)89:0.0869182466)81:0.0695047816,(((((ACHA001-20_HLS20486_Tornatellaria_sp:0.0000021145,(ACHA002-20_HLS20002_Tornatellides_sp:0.0824741722,ACHA216-22_PCMB54681_Tornatellides_subperforatus:0.0530895620)100:0.7242803970)100:9.9999980089,ACHA042-20_HLS20524_Auriculella_tenella:0.0013027391)50:0.0032930729,ACHA010-20_HLS20134_Auriculella_tenella:0.0000025367)54:0.0032758957,ACHA019-20_HLS20347_Auriculella_tenella:0.0000026055)79:0.0695979972,ACHA012-20_HLS20649_Auriculella_tenella:0.0244012430)56:0.0000020270)81:0.0083239769,((((ACHA027-20_HLS20138_Auriculella_gagneorum:0.0045438811,ACHA050-20_HLS20539_Auriculella_gagneorum:0.0045471409)46:0.0000020033,ACHA011-20_HLS20137_Auriculella_gagneorum:0.0000025304)59:0.0000025160,ACHA046-20_HLS20536_Auriculella_gagneorum:0.0045428065)100:0.0667865952,((ACHA029-20_HLS20186_Auriculella_gagneorum:0.0000020033,ACHA015-20_HLS20185_Auriculella_gagneorum:0.0036035941)79:0.0000022819,ACHA017-20_HLS20878_Auriculella_gagneorum:0.0425002522)99:0.0327075493)100:0.0584039497);
+
+TIME STAMP
+----------
+
+Date and time: Fri Jun 13 17:39:20 2025
+Total CPU time used: 26.714027 seconds (0h:0m:26s)
+Total wall-clock time used: 14.26263367 seconds (0h:0m:14s)
+

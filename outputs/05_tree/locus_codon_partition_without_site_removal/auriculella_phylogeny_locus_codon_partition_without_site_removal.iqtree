@@ -1,0 +1,333 @@
+IQ-TREE 2.1.4-beta COVID-edition built Jun 24 2021
+
+Partition file name: outputs/05_tree/locus_codon_partition_without_site_removal/auriculella_partitions.txt
+Input file name: outputs/04_supermatrix/original/FcC_supermatrix.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 538846
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 54 taxa with 6 partitions and 2385 total sites (48.5441% missing data)
+
+  ID  Name         Type	Seq	Site	Unique	Infor	Invar	Const
+   1  16S          DNA	20	471	88	70	371	371
+   2  28S          DNA	36	538	16	12	519	519
+   3  COI-5P_pos1  DNA	54	218	40	28	188	188
+   4  COI-5P_pos2  DNA	54	218	12	0	217	217
+   5  COI-5P_pos3  DNA	54	218	145	134	59	59
+   6  ITS          DNA	3	722	4	0	722	722
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F          0.5592  GTR{1.31426,4.54415,3.12895,0.0001,5.59672}+F{0.35472,0.114239,0.143239,0.387801}
+   2  GTR+F          0.0514  GTR{0.0001,1.23118,0.681829,0.0001,4.66867}+F{0.185883,0.306683,0.349789,0.157645}
+   3  GTR+F          0.4039  GTR{0.0001,14.8886,1.68085,0.0001,100}+F{0.310865,0.131998,0.258202,0.298935}
+   4  GTR+F          0.0214  GTR{0.0001,0.0001,0.0001,100,0.0001}+F{0.123616,0.21571,0.197649,0.463026}
+   5  GTR+F          5.5247  GTR{0.808793,18.2727,0.352175,21.5652,21.7232}+F{0.433038,0.028625,0.0531607,0.485176}
+   6  GTR+F          1.1037  GTR{1,1,1,1,1}+F{0.240862,0.257022,0.25933,0.242786}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6423.0096 (s.e. 205.4534)
+Unconstrained log-likelihood (without tree): -4918.5331
+Number of free parameters (#branches + #model parameters): 158
+Akaike information criterion (AIC) score: 13162.0191
+Corrected Akaike information criterion (AICc) score: 13184.5906
+Bayesian information criterion (BIC) score: 14074.7779
+
+Total tree length (sum of branch lengths): 0.7749
+Sum of internal branch lengths: 0.5405 (69.7449% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ACHA009-20_HLS20647_Auriculella_tenella' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--ACHA009-20_HLS20647_Auriculella_tenella
+|
++--ACHA012-20_HLS20649_Auriculella_tenella
+|
+|        +--ACHA019-20_HLS20347_Auriculella_tenella
+|     +--| (88)
+|     |  +**ACHA010-20_HLS20134_Auriculella_tenella
+|  +--| (100)
+|  |  +**ACHA042-20_HLS20524_Auriculella_tenella
++--| (68)
+   |                                                               +-------------ACHA001-20_HLS20486_Tornatellaria_sp
+   |                          +------------------------------------| (100)
+   |                          |                                    |       +--ACHA216-22_PCMB54681_Tornatellides_subperforatus
+   |                          |                                    +-------| (100)
+   |                          |                                            +--ACHA002-20_HLS20002_Tornatellides_sp
+   |                       +--| (53)
+   |                       |  +**ACHA020-20_HLS20595_Auriculella_crassula
+   |                    +--| (57)
+   |                    |  +--ACHA023-20_HLS20607_Auriculella_crassula
+   |                 +--| (56)
+   |                 |  |  +--ACHA004-20_HLS20609_Auriculella_crassula
+   |                 |  +**| (71)
+   |                 |     +**ACHA024-20_HLS20454_Auriculella_crassula
+   |              +--| (56)
+   |              |  |     +--ACHA006-20_HLS20597_Auriculella_crassula
+   |              |  |  +--| (100)
+   |              |  |  |  +--ACHA003-20_HLS20637_Auriculella_crassula
+   |              |  +--| (81)
+   |              |     |  +--ACHA013-20_HLS20458_Auriculella_crassula
+   |              |     +--| (99)
+   |              |        +--ACHA033-20_HLS20459_Auriculella_crassula
+   |           +--| (49)
+   |           |  |           +--ACHA014-20_HLS20730_Auriculella_malleata
+   |           |  |        +--| (50)
+   |           |  |        |  +--ACHA007-20_HLS20655_Auriculella_malleata
+   |           |  |     +--| (52)
+   |           |  |     |  +--ACHA047-20_HLS20723_Auriculella_malleata
+   |           |  |  +--| (98)
+   |           |  |  |  +--ACHA041-20_HLS20731_Auriculella_malleata
+   |           |  +--| (100)
+   |           |     |  +--ACHA038-20_HLS21113_Auriculella_malleata
+   |           |     +--| (99)
+   |           |        +**ACHA021-20_HLS21114_Auriculella_malleata
+   |        +--| (68)
+   |        |  |              +--ACHA005-20_HLS20091_Auriculella_perpusilla
+   |        |  |           +--| (84)
+   |        |  |           |  +**ACHA039-20_HLS21705_Auriculella_perpusilla
+   |        |  |        +--| (100)
+   |        |  |        |  |  +--ACHA008-20_HLS20187_Auriculella_perpusilla
+   |        |  |        |  +--| (98)
+   |        |  |        |     +--ACHA040-20_HLS21703_Auriculella_perpusilla
+   |        |  |     +--| (70)
+   |        |  |     |  |  +--ACHA018-20_HLS20747_Auriculella_ambusta
+   |        |  |     |  +--| (91)
+   |        |  |     |     |  +--ACHA043-20_HLS21744_Auriculella_ambusta
+   |        |  |     |     +--| (91)
+   |        |  |     |        +--ACHA044-20_HLS20879_Auriculella_ambusta
+   |        |  |  +--| (82)
+   |        |  |  |  |  +--ACHA016-20_HLS20184_Auriculella_ambusta
+   |        |  |  |  +--| (100)
+   |        |  |  |     +--ACHA036-20_HLS20183_Auriculella_ambusta
+   |        |  +--| (63)
+   |        |     |      +--ACHA053-20_HLS21612_Auriculella_perversa
+   |        |     |  +---| (100)
+   |        |     |  |   +**ACHA052-20_HLS20232_Auriculella_perversa
+   |        |     +--| (51)
+   |        |        +---ACHA049-20_HLS21154_Auriculella_montana
+   |     +--| (87)
+   |     |  |     +--ACHA028-20_HLS20149_Auriculella_uniplicata
+   |     |  |  +--| (83)
+   |     |  |  |  |  +--ACHA035-20_HLS20702_Auriculella_uniplicata
+   |     |  |  |  +--| (98)
+   |     |  |  |     |  +--ACHA032-20_HLS20127_Auriculella_uniplicata
+   |     |  |  |     +--| (99)
+   |     |  |  |        +--ACHA031-20_HLS20126_Auriculella_uniplicata
+   |     |  +--| (97)
+   |     |     |     +--ACHA037-20_HLS20131_Auriculella_uniplicata
+   |     |     |  +--| (90)
+   |     |     |  |  +--ACHA034-20_HLS20130_Auriculella_uniplicata
+   |     |     +--| (92)
+   |     |        +--ACHA025-20_HLS20708_Auriculella_uniplicata
+   |  +--| (99)
+   |  |  |        +**ACHA030-20_HLS20153_Auriculella_turritella
+   |  |  |     +--| (100)
+   |  |  |     |  +--ACHA048-20_HLS20198_Auriculella_turritella
+   |  |  |  +--| (85)
+   |  |  |  |  |     +**ACHA022-20_HLS20335_Auriculella_turritella
+   |  |  |  |  |  +--| (100)
+   |  |  |  |  |  |  +--ACHA026-20_HLS20336_Auriculella_turritella
+   |  |  |  |  +--| (90)
+   |  |  |  |     +--ACHA045-20_HLS20816_Auriculella_turritella
+   |  |  +--| (99)
+   |  |     +--ACHA051-20_HLS20461_Auriculella_turritella
+   +--| (97)
+      |     +--ACHA017-20_HLS20878_Auriculella_gagneorum
+      |  +--| (99)
+      |  |  |  +--ACHA015-20_HLS20185_Auriculella_gagneorum
+      |  |  +--| (98)
+      |  |     +**ACHA029-20_HLS20186_Auriculella_gagneorum
+      +--| (96)
+         |        +**ACHA011-20_HLS20137_Auriculella_gagneorum
+         |     +**| (76)
+         |     |  +--ACHA027-20_HLS20138_Auriculella_gagneorum
+         |  +**| (76)
+         |  |  +--ACHA050-20_HLS20539_Auriculella_gagneorum
+         +--| (100)
+            +--ACHA046-20_HLS20536_Auriculella_gagneorum
+
+Tree in newick format:
+
+(ACHA009-20_HLS20647_Auriculella_tenella:0.0055900266,ACHA012-20_HLS20649_Auriculella_tenella:0.0053507927,(((ACHA019-20_HLS20347_Auriculella_tenella:0.0006874020,ACHA010-20_HLS20134_Auriculella_tenella:0.0000013099)88:0.0008582732,ACHA042-20_HLS20524_Auriculella_tenella:0.0000013882)100:0.0130497449,((((((((((ACHA001-20_HLS20486_Tornatellaria_sp:0.0866718005,(ACHA216-22_PCMB54681_Tornatellides_subperforatus:0.0196977254,ACHA002-20_HLS20002_Tornatellides_sp:0.0130520942)100:0.0507567672)100:0.2151259509,ACHA020-20_HLS20595_Auriculella_crassula:0.0000015608)53:0.0008270494,ACHA023-20_HLS20607_Auriculella_crassula:0.0008509485)57:0.0025004734,(ACHA004-20_HLS20609_Auriculella_crassula:0.0040404911,ACHA024-20_HLS20454_Auriculella_crassula:0.0000013099)71:0.0000015865)56:0.0037868602,((ACHA006-20_HLS20597_Auriculella_crassula:0.0077946471,ACHA003-20_HLS20637_Auriculella_crassula:0.0047929712)100:0.0132242784,(ACHA013-20_HLS20458_Auriculella_crassula:0.0065405101,ACHA033-20_HLS20459_Auriculella_crassula:0.0019267204)99:0.0088431327)81:0.0025223530)56:0.0098406800,((((ACHA014-20_HLS20730_Auriculella_malleata:0.0015382246,ACHA007-20_HLS20655_Auriculella_malleata:0.0042327460)50:0.0006464633,ACHA047-20_HLS20723_Auriculella_malleata:0.0016721440)52:0.0008323985,ACHA041-20_HLS20731_Auriculella_malleata:0.0017760751)98:0.0059520163,(ACHA038-20_HLS21113_Auriculella_malleata:0.0027329444,ACHA021-20_HLS21114_Auriculella_malleata:0.0000013099)99:0.0041995380)100:0.0204274739)49:0.0041230999,(((((ACHA005-20_HLS20091_Auriculella_perpusilla:0.0006774227,ACHA039-20_HLS21705_Auriculella_perpusilla:0.0000013121)84:0.0004839621,(ACHA008-20_HLS20187_Auriculella_perpusilla:0.0018211966,ACHA040-20_HLS21703_Auriculella_perpusilla:0.0015886942)98:0.0020043318)100:0.0130839139,(ACHA018-20_HLS20747_Auriculella_ambusta:0.0006812424,(ACHA043-20_HLS21744_Auriculella_ambusta:0.0024839518,ACHA044-20_HLS20879_Auriculella_ambusta:0.0024958345)91:0.0007703625)91:0.0024732279)70:0.0010886065,(ACHA016-20_HLS20184_Auriculella_ambusta:0.0014525450,ACHA036-20_HLS20183_Auriculella_ambusta:0.0013661543)100:0.0113305300)82:0.0055275363,((ACHA053-20_HLS21612_Auriculella_perversa:0.0006290045,ACHA052-20_HLS20232_Auriculella_perversa:0.0000013099)100:0.0284255502,ACHA049-20_HLS21154_Auriculella_montana:0.0234756666)51:0.0027896849)63:0.0025315251)68:0.0031023979,((ACHA028-20_HLS20149_Auriculella_uniplicata:0.0037082009,(ACHA035-20_HLS20702_Auriculella_uniplicata:0.0011258047,(ACHA032-20_HLS20127_Auriculella_uniplicata:0.0007468915,ACHA031-20_HLS20126_Auriculella_uniplicata:0.0007451243)99:0.0012287648)98:0.0074753566)83:0.0033910719,((ACHA037-20_HLS20131_Auriculella_uniplicata:0.0015919034,ACHA034-20_HLS20130_Auriculella_uniplicata:0.0024151237)90:0.0013802935,ACHA025-20_HLS20708_Auriculella_uniplicata:0.0029471005)92:0.0094039230)97:0.0225359712)87:0.0048396641,(((ACHA030-20_HLS20153_Auriculella_turritella:0.0000013099,ACHA048-20_HLS20198_Auriculella_turritella:0.0007555804)100:0.0015040515,((ACHA022-20_HLS20335_Auriculella_turritella:0.0000013099,ACHA026-20_HLS20336_Auriculella_turritella:0.0007523049)100:0.0024275029,ACHA045-20_HLS20816_Auriculella_turritella:0.0016244006)90:0.0006727980)85:0.0008037277,ACHA051-20_HLS20461_Auriculella_turritella:0.0020818677)99:0.0124467473)99:0.0094735142,((ACHA017-20_HLS20878_Auriculella_gagneorum:0.0063867170,(ACHA015-20_HLS20185_Auriculella_gagneorum:0.0016711314,ACHA029-20_HLS20186_Auriculella_gagneorum:0.0000013099)98:0.0019031325)99:0.0044287448,(((ACHA011-20_HLS20137_Auriculella_gagneorum:0.0000014107,ACHA027-20_HLS20138_Auriculella_gagneorum:0.0007489144)76:0.0000013099,ACHA050-20_HLS20539_Auriculella_gagneorum:0.0007574346)76:0.0000014105,ACHA046-20_HLS20536_Auriculella_gagneorum:0.0007566912)100:0.0107017580)96:0.0068793575)97:0.0054072920)68:0.0024244865);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6423.024577
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--ACHA009-20_HLS20647_Auriculella_tenella
+|
++--ACHA012-20_HLS20649_Auriculella_tenella
+|
+|        +--ACHA019-20_HLS20347_Auriculella_tenella
+|     +--| (88)
+|     |  +--ACHA010-20_HLS20134_Auriculella_tenella
+|  +--| (100)
+|  |  +--ACHA042-20_HLS20524_Auriculella_tenella
++--| (68)
+   |                                                               +-------------ACHA001-20_HLS20486_Tornatellaria_sp
+   |                          +------------------------------------| (100)
+   |                          |                                    |       +--ACHA216-22_PCMB54681_Tornatellides_subperforatus
+   |                          |                                    +-------| (100)
+   |                          |                                            +--ACHA002-20_HLS20002_Tornatellides_sp
+   |                       +--| (53)
+   |                       |  +--ACHA020-20_HLS20595_Auriculella_crassula
+   |                    +--| (57)
+   |                    |  +--ACHA023-20_HLS20607_Auriculella_crassula
+   |                 +--| (56)
+   |                 |  |  +--ACHA004-20_HLS20609_Auriculella_crassula
+   |                 |  +--| (71)
+   |                 |     +--ACHA024-20_HLS20454_Auriculella_crassula
+   |              +--| (56)
+   |              |  |     +--ACHA006-20_HLS20597_Auriculella_crassula
+   |              |  |  +--| (100)
+   |              |  |  |  +--ACHA003-20_HLS20637_Auriculella_crassula
+   |              |  +--| (81)
+   |              |     |  +--ACHA013-20_HLS20458_Auriculella_crassula
+   |              |     +--| (99)
+   |              |        +--ACHA033-20_HLS20459_Auriculella_crassula
+   |           +--| (49)
+   |           |  |           +--ACHA014-20_HLS20730_Auriculella_malleata
+   |           |  |        +--| (50)
+   |           |  |        |  +--ACHA007-20_HLS20655_Auriculella_malleata
+   |           |  |     +--| (52)
+   |           |  |     |  +--ACHA047-20_HLS20723_Auriculella_malleata
+   |           |  |  +--| (98)
+   |           |  |  |  +--ACHA041-20_HLS20731_Auriculella_malleata
+   |           |  +--| (100)
+   |           |     |  +--ACHA038-20_HLS21113_Auriculella_malleata
+   |           |     +--| (99)
+   |           |        +--ACHA021-20_HLS21114_Auriculella_malleata
+   |        +--| (68)
+   |        |  |              +--ACHA005-20_HLS20091_Auriculella_perpusilla
+   |        |  |           +--| (84)
+   |        |  |           |  +--ACHA039-20_HLS21705_Auriculella_perpusilla
+   |        |  |        +--| (100)
+   |        |  |        |  |  +--ACHA008-20_HLS20187_Auriculella_perpusilla
+   |        |  |        |  +--| (98)
+   |        |  |        |     +--ACHA040-20_HLS21703_Auriculella_perpusilla
+   |        |  |     +--| (70)
+   |        |  |     |  |  +--ACHA018-20_HLS20747_Auriculella_ambusta
+   |        |  |     |  +--| (91)
+   |        |  |     |     |  +--ACHA043-20_HLS21744_Auriculella_ambusta
+   |        |  |     |     +--| (91)
+   |        |  |     |        +--ACHA044-20_HLS20879_Auriculella_ambusta
+   |        |  |  +--| (82)
+   |        |  |  |  |  +--ACHA016-20_HLS20184_Auriculella_ambusta
+   |        |  |  |  +--| (100)
+   |        |  |  |     +--ACHA036-20_HLS20183_Auriculella_ambusta
+   |        |  +--| (63)
+   |        |     |      +--ACHA053-20_HLS21612_Auriculella_perversa
+   |        |     |  +---| (100)
+   |        |     |  |   +--ACHA052-20_HLS20232_Auriculella_perversa
+   |        |     +--| (51)
+   |        |        +---ACHA049-20_HLS21154_Auriculella_montana
+   |     +--| (87)
+   |     |  |     +--ACHA028-20_HLS20149_Auriculella_uniplicata
+   |     |  |  +--| (83)
+   |     |  |  |  |  +--ACHA035-20_HLS20702_Auriculella_uniplicata
+   |     |  |  |  +--| (98)
+   |     |  |  |     |  +--ACHA032-20_HLS20127_Auriculella_uniplicata
+   |     |  |  |     +--| (99)
+   |     |  |  |        +--ACHA031-20_HLS20126_Auriculella_uniplicata
+   |     |  +--| (97)
+   |     |     |     +--ACHA037-20_HLS20131_Auriculella_uniplicata
+   |     |     |  +--| (90)
+   |     |     |  |  +--ACHA034-20_HLS20130_Auriculella_uniplicata
+   |     |     +--| (92)
+   |     |        +--ACHA025-20_HLS20708_Auriculella_uniplicata
+   |  +--| (99)
+   |  |  |        +--ACHA030-20_HLS20153_Auriculella_turritella
+   |  |  |     +--| (100)
+   |  |  |     |  +--ACHA048-20_HLS20198_Auriculella_turritella
+   |  |  |  +--| (85)
+   |  |  |  |  |     +--ACHA022-20_HLS20335_Auriculella_turritella
+   |  |  |  |  |  +--| (100)
+   |  |  |  |  |  |  +--ACHA026-20_HLS20336_Auriculella_turritella
+   |  |  |  |  +--| (90)
+   |  |  |  |     +--ACHA045-20_HLS20816_Auriculella_turritella
+   |  |  +--| (99)
+   |  |     +--ACHA051-20_HLS20461_Auriculella_turritella
+   +--| (97)
+      |     +--ACHA017-20_HLS20878_Auriculella_gagneorum
+      |  +--| (99)
+      |  |  |  +--ACHA015-20_HLS20185_Auriculella_gagneorum
+      |  |  +--| (98)
+      |  |     +--ACHA029-20_HLS20186_Auriculella_gagneorum
+      +--| (96)
+         |        +--ACHA011-20_HLS20137_Auriculella_gagneorum
+         |     +--| (76)
+         |     |  +--ACHA027-20_HLS20138_Auriculella_gagneorum
+         |  +--| (76)
+         |  |  +--ACHA050-20_HLS20539_Auriculella_gagneorum
+         +--| (100)
+            +--ACHA046-20_HLS20536_Auriculella_gagneorum
+
+
+Consensus tree in newick format: 
+
+(ACHA009-20_HLS20647_Auriculella_tenella:0.0055953808,ACHA012-20_HLS20649_Auriculella_tenella:0.0053506958,(((ACHA019-20_HLS20347_Auriculella_tenella:0.0006880897,ACHA010-20_HLS20134_Auriculella_tenella:0.0000022755)88:0.0008573764,ACHA042-20_HLS20524_Auriculella_tenella:0.0000021236)100:0.0130509729,((((((((((ACHA001-20_HLS20486_Tornatellaria_sp:0.0866567655,(ACHA216-22_PCMB54681_Tornatellides_subperforatus:0.0197127845,ACHA002-20_HLS20002_Tornatellides_sp:0.0130560007)100:0.0508548563)100:0.2151251626,ACHA020-20_HLS20595_Auriculella_crassula:0.0000026429)53:0.0008268219,ACHA023-20_HLS20607_Auriculella_crassula:0.0008514482)57:0.0024996878,(ACHA004-20_HLS20609_Auriculella_crassula:0.0040417638,ACHA024-20_HLS20454_Auriculella_crassula:0.0000026429)71:0.0000026199)56:0.0037901719,((ACHA006-20_HLS20597_Auriculella_crassula:0.0077988646,ACHA003-20_HLS20637_Auriculella_crassula:0.0047936651)100:0.0132271223,(ACHA013-20_HLS20458_Auriculella_crassula:0.0065416486,ACHA033-20_HLS20459_Auriculella_crassula:0.0019265200)99:0.0088494669)81:0.0025249568)56:0.0098482268,((((ACHA014-20_HLS20730_Auriculella_malleata:0.0015378012,ACHA007-20_HLS20655_Auriculella_malleata:0.0042327426)50:0.0006469188,ACHA047-20_HLS20723_Auriculella_malleata:0.0016734877)52:0.0008320870,ACHA041-20_HLS20731_Auriculella_malleata:0.0017761779)98:0.0059484176,(ACHA038-20_HLS21113_Auriculella_malleata:0.0027329500,ACHA021-20_HLS21114_Auriculella_malleata:0.0000026429)99:0.0042075764)100:0.0204479561)49:0.0041154451,(((((ACHA005-20_HLS20091_Auriculella_perpusilla:0.0006773145,ACHA039-20_HLS21705_Auriculella_perpusilla:0.0000021236)84:0.0004803200,(ACHA008-20_HLS20187_Auriculella_perpusilla:0.0018202784,ACHA040-20_HLS21703_Auriculella_perpusilla:0.0015880664)98:0.0020101784)100:0.0130882808,(ACHA018-20_HLS20747_Auriculella_ambusta:0.0006824772,(ACHA043-20_HLS21744_Auriculella_ambusta:0.0024838507,ACHA044-20_HLS20879_Auriculella_ambusta:0.0024950157)91:0.0007702295)91:0.0024662190)70:0.0010964608,(ACHA016-20_HLS20184_Auriculella_ambusta:0.0014566848,ACHA036-20_HLS20183_Auriculella_ambusta:0.0013647183)100:0.0113277134)82:0.0055235318,((ACHA053-20_HLS21612_Auriculella_perversa:0.0006284479,ACHA052-20_HLS20232_Auriculella_perversa:0.0000021236)100:0.0283839654,ACHA049-20_HLS21154_Auriculella_montana:0.0234373830)51:0.0028686177)63:0.0025310967)68:0.0031383992,((ACHA028-20_HLS20149_Auriculella_uniplicata:0.0037258731,(ACHA035-20_HLS20702_Auriculella_uniplicata:0.0011261325,(ACHA032-20_HLS20127_Auriculella_uniplicata:0.0007468235,ACHA031-20_HLS20126_Auriculella_uniplicata:0.0007451054)99:0.0012293027)98:0.0074619682)83:0.0033833635,((ACHA037-20_HLS20131_Auriculella_uniplicata:0.0015925206,ACHA034-20_HLS20130_Auriculella_uniplicata:0.0024149920)90:0.0013984032,ACHA025-20_HLS20708_Auriculella_uniplicata:0.0029301049)92:0.0093977769)97:0.0225320419)87:0.0048365297,(((ACHA030-20_HLS20153_Auriculella_turritella:0.0000024378,ACHA048-20_HLS20198_Auriculella_turritella:0.0007550203)100:0.0015038759,((ACHA022-20_HLS20335_Auriculella_turritella:0.0000026429,ACHA026-20_HLS20336_Auriculella_turritella:0.0007520889)100:0.0024277945,ACHA045-20_HLS20816_Auriculella_turritella:0.0016243383)90:0.0006740118)85:0.0008034852,ACHA051-20_HLS20461_Auriculella_turritella:0.0020831403)99:0.0124534641)99:0.0094687759,((ACHA017-20_HLS20878_Auriculella_gagneorum:0.0063863952,(ACHA015-20_HLS20185_Auriculella_gagneorum:0.0016700888,ACHA029-20_HLS20186_Auriculella_gagneorum:0.0000026429)98:0.0019047244)99:0.0044337893,(((ACHA011-20_HLS20137_Auriculella_gagneorum:0.0000023987,ACHA027-20_HLS20138_Auriculella_gagneorum:0.0007487499)76:0.0000022027,ACHA050-20_HLS20539_Auriculella_gagneorum:0.0007574586)76:0.0000022603,ACHA046-20_HLS20536_Auriculella_gagneorum:0.0007562592)100:0.0107011582)96:0.0068840161)97:0.0054126173)68:0.0024295472);
+
+TIME STAMP
+----------
+
+Date and time: Fri Jun 13 17:42:28 2025
+Total CPU time used: 107.589314 seconds (0h:1m:47s)
+Total wall-clock time used: 60.86570619 seconds (0h:1m:0s)
+
