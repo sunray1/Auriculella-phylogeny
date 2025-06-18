@@ -98,7 +98,6 @@ class DataLayout(object):
         ])
 
         # Now construct the numpy datatype that gives us the layout
-        print(layout)
         return numpy.dtype(layout)
 
 
