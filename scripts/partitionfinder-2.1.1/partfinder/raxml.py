@@ -15,23 +15,23 @@
 # conditions, using PartitionFinder implies that you agree with those licences
 # and conditions as well.
 
-import logtools
+from partfinder import logtools
 log = logtools.get_logger()
 
 import os
 import sys
 import fnmatch
-import util
-from database import DataLayout, DataRecord
-from reporter import write_raxml_partitions
-from config import the_config
+from partfinder import util
+from partfinder.database import DataLayout, DataRecord
+from partfinder.reporter import write_raxml_partitions
+from partfinder.config import the_config
 
 from pyparsing import (
     Word, Literal, nums, Suppress, ParseException,
     SkipTo, OneOrMore, Regex, restOfLine, Optional
 )
 
-import raxml_models as models
+from partfinder import raxml_models as models
 
 _protein_letters = "ARNDCQEGHILKMFPSTWYV"
 _dna_letters = "ATCG"
@@ -449,7 +449,7 @@ class Parser(object):
         self.current_block = 1
         try:
             self.root_parser.parseString(text)
-        except ParseException, p:
+        except ParseException as p:
             log.error(str(p))
             raise util.ParseError
 

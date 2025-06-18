@@ -21,11 +21,11 @@
     http://www.atgc-montpellier.fr/phyml/usersguide.php?type=command
 
 """
-import logtools
+from partfinder import logtools
 import os
-from util import PartitionFinderError
+from partfinder.util import PartitionFinderError
 import numpy as np
-import cStringIO
+import io
 from itertools import chain
 
 log = logtools.get_logger()
@@ -349,7 +349,7 @@ class Alignment(object):
             log.error("Cannot find alignment file '%s'", pth)
             raise AlignmentError
 
-        with open(pth, 'rU') as stream:
+        with open(pth, 'r') as stream:
             self.parse_stream(stream)
 
     def parse(self, text):

@@ -15,24 +15,24 @@
 # conditions, using PartitionFinder implies that you agree with those licences
 # and conditions as well.
 
-import logtools
+from partfinder import logtools
 log = logtools.get_logger()
 
 import os
 import shutil
-from database import Database
+from partfinder.database import Database
 
-from alignment import Alignment, SubsetAlignment
-import threadpool
-import scheme
-import subset_ops
-import results
+from partfinder.alignment import Alignment, SubsetAlignment
+from partfinder import threadpool
+from partfinder import scheme
+from partfinder import subset_ops
+from partfinder import results
 import threading
 import collections
-from config import the_config
-from util import PartitionFinderError, ExternalProgramError
-import util
-import raxml
+from partfinder.config import the_config
+from partfinder.util import PartitionFinderError, ExternalProgramError
+from partfinder import util
+from partfinder import raxml
 from shutil import copyfile
 
 class AnalysisError(PartitionFinderError):

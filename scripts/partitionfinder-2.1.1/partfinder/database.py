@@ -15,7 +15,7 @@
 # conditions, using PartitionFinder implies that you agree with those licences
 # and conditions as well.
 
-import logtools
+from partfinder import logtools
 log = logtools.get_logger()
 
 import os
@@ -23,8 +23,8 @@ import numpy
 import tables
 from itertools import combinations
 
-import raxml_models
-import phyml_models
+from partfinder import raxml_models
+from partfinder import phyml_models
 
 int_type = numpy.int32
 float_type = numpy.float32
@@ -67,12 +67,13 @@ class DataLayout(object):
             ri["%s_%s" % (t, f)] = i
 
         self.rate_indexes = ri
-        self.rate_size = len(ri) / 2 
+        self.rate_size = len(ri) // 2 
 
     def get_empty_record(self):
         return numpy.zeros(1, self.data_type)
 
     def make_datatype(self):
+
         # 32 is the md5 length
         subset_id_length = 32
         model_id_length = _model_string_maxlen()
@@ -97,6 +98,7 @@ class DataLayout(object):
         ])
 
         # Now construct the numpy datatype that gives us the layout
+        print(layout)
         return numpy.dtype(layout)
 
 

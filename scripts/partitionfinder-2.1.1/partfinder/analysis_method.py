@@ -15,21 +15,21 @@
 # conditions, using PartitionFinder implies that you agree with those licences
 # and conditions as well.
 
-import logtools
+from partfinder import logtools
 import math
-import scheme
-import submodels
-from analysis import Analysis, AnalysisError
-from alignment import SubsetAlignment
-import neighbour
-import kmeans
-from subset import Subset
-import subset_ops
-import entropy
+from partfinder import scheme
+from partfinder import submodels
+from partfinder.analysis import Analysis, AnalysisError
+from partfinder.alignment import SubsetAlignment
+from partfinder import neighbour
+from partfinder import kmeans
+from partfinder.subset import Subset
+from partfinder import subset_ops
+from partfinder import entropy
 from scipy import spatial
-from scipy.misc import comb
+from scipy.special import comb
 import numpy as np
-from config import the_config
+from partfinder.config import the_config
 
 log = logtools.get_logger()
 

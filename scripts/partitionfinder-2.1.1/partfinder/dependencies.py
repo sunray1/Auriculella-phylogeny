@@ -16,13 +16,17 @@
 # and conditions as well.
 
 
-import imp
+import importlib.util
+
+def module_exists(module_name):
+    spec = importlib.util.find_spec(module_name)
+    return spec is not None
 
 DEPENDENCIES = ['numpy', 'pandas', 'tables', 'pyparsing', 'scipy', 'sklearn']
 
 for dep in DEPENDENCIES:
     try:
-        imp.find_module(dep)
+        module_exists(dep)
     except ImportError:
         print('\n\n\n **** ERROR **** \n')
         print('Could not find the dependency %s, please check that you have '
