@@ -278,7 +278,7 @@ class Analysis(object):
 
         log.debug("chunk size (in number of subsets) = %d", n)
 
-        subset_chunks = [all_subsets[i:i + n] for i in xrange(0, len(all_subsets), n)]
+        subset_chunks = [all_subsets[i:i + n] for i in range(0, len(all_subsets), n)]
         
         for subsets in subset_chunks:
             # prepare the list of tasks

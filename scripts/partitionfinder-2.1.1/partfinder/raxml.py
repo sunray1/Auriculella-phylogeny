@@ -448,6 +448,8 @@ class Parser(object):
         # first one, so we must remember where we are.
         self.current_block = 1
         try:
+            if isinstance(text, bytes):
+                text = text.decode("utf-8")
             self.root_parser.parseString(text)
         except ParseException as p:
             log.error(str(p))

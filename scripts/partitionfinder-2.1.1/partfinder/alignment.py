@@ -372,7 +372,7 @@ class Alignment(object):
             # up to 100
             shortened = "%s    " % (spec[:99])
             stream.write(shortened)
-            stream.write(sequence.tostring())
+            stream.write(sequence.tobytes().decode("utf-8"))
             stream.write("\n")
 
     def check_state_probs(self, subset, cfg):

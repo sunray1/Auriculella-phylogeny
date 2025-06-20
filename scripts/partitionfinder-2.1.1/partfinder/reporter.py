@@ -114,7 +114,7 @@ class TextReporter(object):
             self.write_mrbayes(sch, result, output, sorted_subsets)
 
     def write_scheme_header(self, sch, result, output):
-        output.write(scheme_header_template % ("Scheme Name", sch.name))
+        output.write((scheme_header_template % ("Scheme Name", sch.name)))
         output.write(scheme_header_template % ("Scheme lnL", result.lnl))
         if self.cfg.model_selection == "aic":
             output.write(scheme_header_template % ("Scheme AIC", result.aic))
@@ -295,45 +295,46 @@ class TextReporter(object):
 
     def write_best_scheme(self, result):
         pth = os.path.join(self.cfg.output_path, 'best_scheme.txt')
-        output = open(pth, 'wb')
-        output.write('Settings used\n\n')
-        output.write(scheme_header_template % ("alignment", self.cfg.alignment_path))
-        output.write(scheme_header_template % ("branchlengths", self.cfg.branchlengths))
-        output.write(scheme_header_template % ("models", ', '.join(self.cfg.models)))
-        output.write(scheme_header_template % ("model_selection",
-                                                self.cfg.model_selection))
-        output.write(scheme_header_template % ("search", self.cfg.search))
+        output = open(pth, 'w')
+
+        def write_line(text):
+           output.write((text + '\n'))
+
+        write_line('Settings used')
+        write_line('')
+        write_line(scheme_header_template % ("alignment", self.cfg.alignment_path))
+        write_line(scheme_header_template % ("branchlengths", self.cfg.branchlengths))
+        write_line(scheme_header_template % ("models", ', '.join(self.cfg.models)))
+        write_line(scheme_header_template % ("model_selection", self.cfg.model_selection))
+        write_line(scheme_header_template % ("search", self.cfg.search))
+
         if self.cfg.search in ["rcluster", "hcluster", "rclusterf"]:
-            pretty_weights = "rate = %s, base = %s, model = %s, alpha = %s" %(
-                               str(self.cfg.cluster_weights["rate"]),
-                               str(self.cfg.cluster_weights["freqs"]),
-                               str(self.cfg.cluster_weights["model"]),
-                               str(self.cfg.cluster_weights["alpha"]))
-            output.write(scheme_header_template % ("weights", pretty_weights))
+            pretty_weights = "rate = %s, base = %s, model = %s, alpha = %s" % (
+                str(self.cfg.cluster_weights["rate"]),
+                str(self.cfg.cluster_weights["freqs"]),
+                str(self.cfg.cluster_weights["model"]),
+                str(self.cfg.cluster_weights["alpha"]),
+            )
+            write_line(scheme_header_template % ("weights", pretty_weights))
 
         if self.cfg.search.startswith("rcluster"):
-            output.write(scheme_header_template % ("rcluster-percent",
-                                                   self.cfg.cluster_percent))
-            output.write(scheme_header_template % ("rcluster-max",
-                                                       self.cfg.cluster_max))
+            write_line(scheme_header_template % ("rcluster-percent", self.cfg.cluster_percent))
+            write_line(scheme_header_template % ("rcluster-max", self.cfg.cluster_max))
 
-        if self.cfg.search == "kmeans" or self.cfg.search == "krmeans":
-            output.write(scheme_header_template % ("min-subset-size",
-                                                   self.cfg.min_subset_size))
-            output.write(scheme_header_template % ("kmeans based on",
-                                                   self.cfg.kmeans))
-            if self.cfg.all_states == True:
-                output.write(scheme_header_template % ("--all_states setting used",
-                                                       self.cfg.all_states))
+        if self.cfg.search in ["kmeans", "krmeans"]:
+            write_line(scheme_header_template % ("min-subset-size", self.cfg.min_subset_size))
+            write_line(scheme_header_template % ("kmeans based on", self.cfg.kmeans))
+            if self.cfg.all_states:
+                write_line(scheme_header_template % ("--all_states setting used", self.cfg.all_states))
 
-
-        output.write('\n\nBest partitioning scheme\n\n')
+        write_line('')
+        write_line('Best partitioning scheme')
+        write_line('')
         self.output_scheme(result.best_scheme, result.best_result, output)
         log.info("Information on best scheme is here: %s", pth)
 
         citation_text = write_citation_text(self)
 
-        # now we write subset summaries for all the subsets in the best scheme
         for s in result.best_scheme:
             self.write_subset_summary(s)
 
@@ -342,7 +343,9 @@ class TextReporter(object):
 
         for c in citation_text:
             log.info("%s", c)
-            output.write(c)
+            output.write((c + '\n'))
+
+        output.close()
 
 
 def write_raxml_partitions(sch, output, sorted_subsets, use_lg = False):

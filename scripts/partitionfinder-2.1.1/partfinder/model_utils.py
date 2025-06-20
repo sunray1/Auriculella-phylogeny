@@ -80,6 +80,9 @@ def get_mrbayes_modeltext_DNA(modelstring, i):
     """Start with a model like this: GTR+I+G, or LG+I+G, return some text that can be 
     used to run a model like it in MrBayes"""
 
+    if isinstance(modelstring, bytes):
+        modelstring = modelstring.decode("utf-8")
+
     elements = modelstring.split("+")
     model_name = elements[0]
     extras = elements[1:]

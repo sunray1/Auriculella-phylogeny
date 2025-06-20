@@ -177,7 +177,7 @@ class GreedyAnalysis(Analysis):
                 # this is a fake distance matrix, so that the greedy algorithm
                 # can use all the tricks of the relaxed clustering algorithm
                 dim = len(subsets)
-                d_matrix = np.zeros((((dim*dim)-dim))/2)
+                d_matrix = np.zeros((((dim*dim)-dim))//2)
                 d_matrix[:] = np.inf
 
                 if step == 1:
