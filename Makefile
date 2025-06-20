@@ -2,13 +2,13 @@
 all: outputs/09_tree_collapsed/auriculella_species_collapsed.tre
 
 # Tree Models
-IQTREE_LABEL_NO_PART = iqtree_no_partitioning_without_site_removal
-IQTREE_LABEL_SITE_REMOVED = iqtree_no_partitioning_with_site_removal
-IQTREE_LABEL_PART = iqtree_locus_partitioning_without_site_removal
-IQTREE_LABEL_PART_REMOVED = iqtree_locus_partitioning_with_site_removal
-IQTREE_LABEL_CODON = iqtree_locus_codon_partition_without_site_removal
-RAXML_LABEL_PART = raxml_partitioning_without_site_removal
-RAXML_LABEL_PART_REMOVED = raxml_partitioning_with_site_removal
+RAXML_LABEL_PART = 01_raxml_partitioning_without_site_removal
+RAXML_LABEL_PART_REMOVED = 02_raxml_partitioning_with_site_removal
+IQTREE_LABEL_NO_PART = 03_iqtree_no_partitioning_without_site_removal
+IQTREE_LABEL_SITE_REMOVED = 04_iqtree_no_partitioning_with_site_removal
+IQTREE_LABEL_PART = 05_iqtree_locus_partitioning_without_site_removal
+IQTREE_LABEL_PART_REMOVED = 06_iqtree_locus_partitioning_with_site_removal
+IQTREE_LABEL_CODON = 07_iqtree_locus_codon_partition_without_site_removal
 
 # Step 01A: Download Auriculella
 # Genbank has the same sequences
@@ -324,11 +324,11 @@ outputs/06_tree/raxml_log_likelihoods.tsv
 		echo "Please choose which tree to use for downstream steps:"; \
 		echo "1) RAxML   - $(RAXML_LABEL_PART)"; \
 		echo "2) RAxML   - $(RAXML_LABEL_PART_REMOVED)"; \
-		echo "3) IQTREE - $(IQTREE_LABEL_NO_PART)"; \
-		echo "4) IQTREE - $(IQTREE_LABEL_SITE_REMOVED)"; \
-		echo "5) IQTREE - $(IQTREE_LABEL_PART)"; \
-		echo "6) IQTREE - $(IQTREE_LABEL_PART_REMOVED)"; \
-		echo "7) IQTREE - $(IQTREE_LABEL_CODON)"; \
+		echo "3) IQ-TREE - $(IQTREE_LABEL_NO_PART)"; \
+		echo "4) IQ-TREE - $(IQTREE_LABEL_SITE_REMOVED)"; \
+		echo "5) IQ-TREE - $(IQTREE_LABEL_PART)"; \
+		echo "6) IQ-TREE - $(IQTREE_LABEL_PART_REMOVED)"; \
+		echo "7) IQ-TREE - $(IQTREE_LABEL_CODON)"; \
 		read -p "Enter the number of your choice: " choice; \
 		case $$choice in \
 			1) echo "$(RAXML_LABEL_PART)" > outputs/06_tree/selected_tree_label.txt ;; \
@@ -344,7 +344,8 @@ outputs/06_tree/raxml_log_likelihoods.tsv
 	'
 
 # Step 07: Re-root tree using MRCA of three outgroup tips
-outputs/07_tree_rooted/done: outputs/06_tree/selected_tree_label.txt
+outputs/07_tree_rooted/done: \
+outputs/06_tree/selected_tree_label.txt
 	mkdir -p outputs/07_tree_rooted
 
 	# Use user-selected tree label
@@ -358,14 +359,16 @@ outputs/07_tree_rooted/done: outputs/06_tree/selected_tree_label.txt
 
 
 # Step 08: Rename tips in tree to species only
-outputs/08_tree_species_renamed/auriculella_species.tre: outputs/07_tree_rooted/done
-	mkdir -p outputs/07_tree_species_renamed
+outputs/08_tree_species_renamed/auriculella_species.tre: \
+outputs/07_tree_rooted/done
+	mkdir -p outputs/08_tree_species_renamed
 
-	best=$$(tail -n +2 outputs/06_tree/log_likelihood_summary.tsv | sort -k2,2n | head -n1 | cut -f1); \
-	rooted_tree=outputs/07_tree_rooted/auriculella_phylogeny_$$best.rooted.tre; \
+	label=$$(cat outputs/06_tree/selected_tree_label.txt); \
+	rooted_tree=outputs/07_tree_rooted/auriculella_phylogeny_$$label.rooted.tre; \
 	./scripts/rename_tree_tips_by_species.py $$rooted_tree $@
 
 # Step 09: Collapse identical species labels
-outputs/09_tree_collapsed/auriculella_species_collapsed.tre: outputs/08_tree_species_renamed/auriculella_species.tre
+outputs/09_tree_collapsed/auriculella_species_collapsed.tre: \
+outputs/08_tree_species_renamed/auriculella_species.tre
 	mkdir -p outputs/09_tree_collapsed
 	nw_condense $< > $@
