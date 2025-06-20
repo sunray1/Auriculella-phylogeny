@@ -163,7 +163,7 @@ class TextReporter(object):
                 partition_sites = sub.site_description_no_commas
 
             output.write("\tcharset Subset%s = %s;\n" % (subset_number, partition_sites))
-            charpartition.append("%s:Subset%s" % (sub.best_model, subset_number))
+            charpartition.append("%s:Subset%s" % (sub.best_model.decode("utf-8") if isinstance(sub.best_model, bytes) else sub.best_model, subset_number))
             subset_number += 1
 
         output.write('\tcharpartition PartitionFinder = %s;\n' % ', '.join(charpartition))
