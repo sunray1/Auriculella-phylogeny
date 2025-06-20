@@ -192,7 +192,7 @@ outputs/05_partitionfinder/original/analysis/best_scheme.txt
 	   -f a -m $$MODEL -q partition_file.txt \
 	   -p $$SEED -x $$SEED -# 100 \
 	   -n $(RAXML_LABEL_PART)
-	mv outputs/06_tree/$(RAXML_LABEL_PART)/RAxML_bestTree.$(RAXML_LABEL_PART) outputs/06_tree/$(RAXML_LABEL_PART)/RAxML_bestTree.$(RAXML_LABEL_PART).tre
+	mv outputs/06_tree/$(RAXML_LABEL_PART)/RAxML_bipartitions.$(RAXML_LABEL_PART) outputs/06_tree/$(RAXML_LABEL_PART)/RAxML_bipartitions.$(RAXML_LABEL_PART).tre
 
 # RAxML: Build tree with partitioning (PartitionFinder2) and with site removal
 outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_info.$(RAXML_LABEL_PART_REMOVED) \
@@ -217,7 +217,7 @@ outputs/05_partitionfinder/filtered/analysis/best_scheme.txt
 	   -f a -m $$MODEL -q partition_file.txt \
 	   -p $$SEED -x $$SEED -# 100 \
 	   -n $(RAXML_LABEL_PART_REMOVED)
-	mv outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_bestTree.$(RAXML_LABEL_PART_REMOVED) outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_bestTree.$(RAXML_LABEL_PART_REMOVED).tre
+	mv outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_bipartitions.$(RAXML_LABEL_PART_REMOVED) outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_bipartitions.$(RAXML_LABEL_PART_REMOVED).tre
 
 # IQ-Tree: Build tree without partitioning and without site removal
 outputs/06_tree/$(IQTREE_LABEL_NO_PART)/auriculella_phylogeny_$(IQTREE_LABEL_NO_PART).iqtree: outputs/04_supermatrix/original/FcC_supermatrix.fas
@@ -287,7 +287,7 @@ outputs/06_tree/$(IQTREE_LABEL_CODON)/auriculella_phylogeny_$(IQTREE_LABEL_CODON
 outputs/06_tree/iqtree_log_likelihoods.tsv \
 outputs/06_tree/raxml_log_likelihoods.tsv: \
 	outputs/06_tree/$(RAXML_LABEL_PART)/RAxML_info.$(RAXML_LABEL_PART) \
-	outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_info.$(RAXML_LABEL_REMOVED) \
+	outputs/06_tree/$(RAXML_LABEL_PART_REMOVED)/RAxML_info.$(RAXML_LABEL_PART_REMOVED) \
 	outputs/06_tree/$(IQTREE_LABEL_NO_PART)/auriculella_phylogeny_$(IQTREE_LABEL_NO_PART).iqtree \
 	outputs/06_tree/$(IQTREE_LABEL_SITE_REMOVED)/auriculella_phylogeny_$(IQTREE_LABEL_SITE_REMOVED).iqtree \
 	outputs/06_tree/$(IQTREE_LABEL_PART)/auriculella_phylogeny_$(IQTREE_LABEL_PART).iqtree \
