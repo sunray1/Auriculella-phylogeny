@@ -1,6 +1,6 @@
 # Auriculella Phylogenomics Pipeline
 
-This repository implements a reproducible bioinformatics workflow for generating a species-level phylogeny of the Hawaiian land snail genus *Auriculella* using publicly available sequence data from the Barcode of Life Data Systems (BOLD). The pipeline includes automated data retrieval, sequence processing, alignment, supermatrix construction, phylogenetic inference, rooting, and tip collapse.
+This repository implements a reproducible bioinformatics workflow for generating a species-level phylogeny of the Hawaiian land snail genus *Auriculella* using publicly available sequence data from the Barcode of Life Data Systems (BOLD). The pipeline includes automated data retrieval, sequence processing, alignment, supermatrix construction, ppartitioning, model selection, hylogenetic inference, rooting, and tip collapse.
 
 The workflow is executed via GNU Make and is fully containerized within a Conda environment to ensure reproducibility across platforms.
 
