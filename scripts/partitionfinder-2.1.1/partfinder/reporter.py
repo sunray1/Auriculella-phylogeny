@@ -186,7 +186,7 @@ class TextReporter(object):
                 pf_scheme_description.append("(%s)" % str(sites).strip('[]'))
                 output.write(scheme_subset_template % (
                     number, 
-                    sub.best_model, 
+                    sub.best_model.decode("utf-8") if isinstance(sub.best_model, bytes) else sub.best_model, 
                     num_sites,
                     sub.subset_id, 
                     'NA',
@@ -198,7 +198,7 @@ class TextReporter(object):
                 pf_scheme_description.append("(%s)" % sub.name)
                 output.write(scheme_subset_template % (
                     number, 
-                    sub.best_model, 
+                    sub.best_model.decode("utf-8") if isinstance(sub.best_model, bytes) else sub.best_model, 
                     len(sub.columns), 
                     sub.subset_id, 
                     sub.name,
