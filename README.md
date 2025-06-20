@@ -22,20 +22,20 @@ The pipeline performs the following steps:
 3. Perform multiple sequence alignment with MAFFT for each locus.
     - Includes a manual verification pause where the user can inspect and adjust alignments (e.g., check reading frames) before concatenation.
 4. Concatenate alignments into a supermatrix using FASconCAT-G.
-    - Uses clipkit to remove gappy (>.9) and uninformative sites
+    - Uses clipkit to remove gappy (>.9) and uninformative sites (site filtering)
 5. Run PartitionFinder2 on both original and filtered (by clipkit) alignments, partitioning by locus and codon (for COI) and performing modelling searches. This is for input into RAxML.
 6. Run maximum likelihood inference using RAxML across two different model schemes:
 
-    * Partitioning (by PartitionFinder2) without site removal
-    * Partitioning (by PartitionFinder2) with site removal
+    1. Partitioning (by PartitionFinder2) without site filtering
+    2. Partitioning (by PartitionFinder2) with site filtering
     
     Run maximum likelihood inference using IQ-TREE across five different model schemes:
 
-    * No partitioning
-    * No partitioning with site filtering
-    * Partitioning by locus
-    * Partitioning by locus with site filtering
-    * Partitioning by locus with COI codon positions
+    3. No partitioning without site filtering
+    4. No partitioning with site filtering
+    5. Partitioning by locus without site filtering
+    6. Partitioning by locus with site filtering
+    7. Partitioning by locus with COI codon positions without site filtering
 
     A log-likelihood file for each program is created, though since log-liklihoods cannot be compared across programs, the final tree has to be chosen manually.
 7. Root the chosen tree using an explicit outgroup (MRCA of selected *Tornatellidinae* tips).
@@ -94,7 +94,11 @@ Intermediate results, logs, and alignments are organized under the outputs/ dire
 
 ### Directory Structure
 ```graphql
-outputs/
+README.md                      # This document
+Makefile                       # Makefile describing the pipeline
+environment.yml                # yml file for reconstructing Conda environment
+scripts/                       # included python scripts
+outputs/                       # Outputs and intermediate files from each step
 ├── 01_download/               # Raw JSON data from BOLD
 ├── 02_fasta/                  # Filtered FASTA sequences by marker
 ├── 03_alignment/              # MAFFT alignments
