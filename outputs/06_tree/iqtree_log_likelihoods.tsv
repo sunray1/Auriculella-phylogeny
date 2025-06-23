@@ -1,0 +1,6 @@
+label	log_likelihood
+03_iqtree_no_partitioning_without_site_removal	-6992.388163
+04_iqtree_no_partitioning_with_site_removal	-2728.491840
+05_iqtree_locus_partitioning_without_site_removal	-7101.303344
+06_iqtree_locus_partitioning_with_site_removal	-2748.404331
+07_iqtree_locus_codon_partition_without_site_removal	-6426.091314

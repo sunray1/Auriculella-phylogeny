@@ -1,0 +1,229 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    TCLASOL-13PJMX3 (AVX2, FMA3, 31 GB RAM)
+Command: iqtree -s outputs/04_supermatrix/original/FcC_supermatrix.fas -redo -nt AUTO -bb 1000 -pre outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal
+Seed:    291393 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jun 20 16:19:21 2025
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file outputs/04_supermatrix/original/FcC_supermatrix.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 54 sequences with 2385 columns, 285 distinct patterns
+244 parsimony-informative, 65 singleton sites, 2076 constant sites
+                                                  Gap/Ambiguity  Composition  p-value
+   1  ACHA045-20_HLS20816_Auriculella_turritella         72.58%    failed      0.00%
+   2  ACHA007-20_HLS20655_Auriculella_malleata           30.99%    passed     98.02%
+   3  ACHA032-20_HLS20127_Auriculella_uniplicata         50.02%    failed      0.07%
+   4  ACHA012-20_HLS20649_Auriculella_tenella            31.07%    passed     86.53%
+   5  ACHA022-20_HLS20335_Auriculella_turritella         50.02%    failed      0.18%
+   6  ACHA026-20_HLS20336_Auriculella_turritella         50.02%    failed      0.15%
+   7  ACHA043-20_HLS21744_Auriculella_ambusta            72.58%    failed      0.00%
+   8  ACHA048-20_HLS20198_Auriculella_turritella         72.58%    failed      0.00%
+   9  ACHA025-20_HLS20708_Auriculella_uniplicata         50.02%    failed      0.15%
+  10  ACHA008-20_HLS20187_Auriculella_perpusilla         30.99%    passed     92.70%
+  11  ACHA046-20_HLS20536_Auriculella_gagneorum          72.58%    failed      0.00%
+  12  ACHA011-20_HLS20137_Auriculella_gagneorum          31.07%    passed     86.17%
+  13  ACHA001-20_HLS20486_Tornatellaria_sp               30.86%    passed     93.90%
+  14  ACHA044-20_HLS20879_Auriculella_ambusta            72.58%    failed      0.00%
+  15  ACHA030-20_HLS20153_Auriculella_turritella         50.02%    failed      0.11%
+  16  ACHA036-20_HLS20183_Auriculella_ambusta            50.02%    failed      0.03%
+  17  ACHA028-20_HLS20149_Auriculella_uniplicata         50.02%    failed      0.15%
+  18  ACHA038-20_HLS21113_Auriculella_malleata           51.19%    failed      0.08%
+  19  ACHA002-20_HLS20002_Tornatellides_sp               31.24%    passed     67.53%
+  20  ACHA050-20_HLS20539_Auriculella_gagneorum          72.58%    failed      0.00%
+  21  ACHA010-20_HLS20134_Auriculella_tenella            31.03%    passed     86.49%
+  22  ACHA005-20_HLS20091_Auriculella_perpusilla         30.99%    passed     91.39%
+  23  ACHA033-20_HLS20459_Auriculella_crassula           50.02%    failed      0.27%
+  24  ACHA031-20_HLS20126_Auriculella_uniplicata         50.02%    failed      0.08%
+  25  ACHA009-20_HLS20647_Auriculella_tenella            31.07%    passed     88.25%
+  26  ACHA018-20_HLS20747_Auriculella_ambusta            53.54%    failed      0.00%
+  27  ACHA029-20_HLS20186_Auriculella_gagneorum          50.02%    failed      0.26%
+  28  ACHA042-20_HLS20524_Auriculella_tenella            72.58%    failed      0.00%
+  29  ACHA047-20_HLS20723_Auriculella_malleata           72.58%    failed      0.00%
+  30  ACHA004-20_HLS20609_Auriculella_crassula           30.94%    passed     84.13%
+  31  ACHA051-20_HLS20461_Auriculella_turritella         72.58%    failed      0.00%
+  32  ACHA015-20_HLS20185_Auriculella_gagneorum          31.07%    passed     76.92%
+  33  ACHA034-20_HLS20130_Auriculella_uniplicata         50.02%    failed      0.09%
+  34  ACHA037-20_HLS20131_Auriculella_uniplicata         50.02%    failed      0.07%
+  35  ACHA023-20_HLS20607_Auriculella_crassula           50.02%    failed      0.34%
+  36  ACHA052-20_HLS20232_Auriculella_perversa           72.58%    failed      0.00%
+  37  ACHA006-20_HLS20597_Auriculella_crassula           30.99%    passed     86.12%
+  38  ACHA019-20_HLS20347_Auriculella_tenella            53.58%    failed      0.00%
+  39  ACHA017-20_HLS20878_Auriculella_gagneorum          53.63%    failed      0.00%
+  40  ACHA040-20_HLS21703_Auriculella_perpusilla         72.58%    failed      0.00%
+  41  ACHA003-20_HLS20637_Auriculella_crassula           30.99%    passed     77.96%
+  42  ACHA035-20_HLS20702_Auriculella_uniplicata         50.02%    failed      0.12%
+  43  ACHA024-20_HLS20454_Auriculella_crassula           50.02%    failed      0.23%
+  44  ACHA014-20_HLS20730_Auriculella_malleata           32.62%    passed     76.26%
+  45  ACHA021-20_HLS21114_Auriculella_malleata           50.02%    failed      0.22%
+  46  ACHA216-22_PCMB54681_Tornatellides_subperforatus    1.64%    failed      0.00%
+  47  ACHA041-20_HLS20731_Auriculella_malleata           73.63%    failed      0.00%
+  48  ACHA027-20_HLS20138_Auriculella_gagneorum          50.02%    failed      0.18%
+  49  ACHA016-20_HLS20184_Auriculella_ambusta            30.99%    passed     84.93%
+  50  ACHA013-20_HLS20458_Auriculella_crassula           30.99%    passed     93.36%
+  51  ACHA049-20_HLS21154_Auriculella_montana            73.63%    failed      0.00%
+  52  ACHA020-20_HLS20595_Auriculella_crassula           50.02%    failed      0.29%
+  53  ACHA053-20_HLS21612_Auriculella_perversa           72.58%    failed      0.00%
+  54  ACHA039-20_HLS21705_Auriculella_perpusilla         72.58%    failed      0.00%
+WARNING: 37 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                              50.05%  38 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+1374 trees examined
+Threads: 1 / Time: 20.006 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -10346
+Threads: 2 / Time: 15.146 sec / Speedup: 1.321 / Efficiency: 66% / LogL: -10346
+Threads: 3 / Time: 14.407 sec / Speedup: 1.389 / Efficiency: 46% / LogL: -10346
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -6997.036
+Optimal log-likelihood: -6996.401
+Rate parameters:  A-C: 0.67963  A-G: 17.57483  A-T: 4.10913  C-G: 2.04741  C-T: 14.32556  G-T: 1.00000
+Base frequencies:  A: 0.266  C: 0.180  G: 0.221  T: 0.332
+Proportion of invariable sites: 0.460
+Gamma shape alpha: 0.237
+Parameters optimization took 1 rounds (0.007 sec)
+Time for fast ML tree search: 0.080 seconds
+
+NOTE: ModelFinder requires 6 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 2385) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         7476.237     113 15178.474    15189.818    15831.270
+  2  GTR+F+I       7044.340     114 14316.679    14328.230    14975.252
+  3  GTR+F+G4      7045.707     114 14319.414    14330.964    14977.987
+  4  GTR+F+I+G4    6989.852     115 14209.704    14221.462    14874.054
+  5  GTR+F+R2      6995.324     115 14220.648    14232.407    14884.998
+  6  GTR+F+R3      6989.034     117 14212.068    14224.248    14887.971
+ 17  SYM+I+G4      7012.087     112 14248.174    14259.315    14895.193
+ 30  TVM+F+I+G4    6990.887     114 14209.773    14221.324    14868.346
+ 43  TVMe+I+G4     7016.143     111 14254.286    14265.225    14895.528
+ 56  TIM3+F+I+G4   7005.783     113 14237.565    14248.910    14890.361
+ 69  TIM3e+I+G4    7038.501     110 14297.003    14307.742    14932.468
+ 82  TIM2+F+I+G4   7004.547     113 14235.095    14246.440    14887.891
+ 95  TIM2e+I+G4    7046.827     110 14313.653    14324.392    14949.118
+108  TIM+F+I+G4    6992.172     113 14210.344    14221.689    14863.140
+121  TIMe+I+G4     7025.701     110 14271.401    14282.140    14906.866
+134  TPM3u+F+I+G4  7006.544     112 14237.087    14248.228    14884.106
+147  TPM3+F+I+G4   7006.544     112 14237.087    14248.228    14884.106
+160  TPM2u+F+I+G4  7005.324     112 14234.649    14245.789    14881.668
+173  TPM2+F+I+G4   7005.324     112 14234.649    14245.789    14881.668
+186  K3Pu+F+I+G4   6993.165     112 14210.331    14221.472    14857.350
+199  K3P+I+G4      7029.925     109 14277.849    14288.390    14907.537
+212  TN+F+I+G4     7012.942     112 14249.884    14261.025    14896.903
+225  TNe+I+G4      7062.007     109 14342.014    14352.554    14971.702
+238  HKY+F+I+G4    7013.809     111 14249.617    14260.556    14890.859
+251  K2P+I+G4      7066.124     108 14348.248    14358.592    14972.159
+264  F81+F+I+G4    7245.878     110 14711.756    14722.495    15347.221
+277  JC+I+G4       7250.442     107 14714.884    14725.034    15333.018
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: TVM+F+I+G4
+Bayesian Information Criterion:         K3Pu+F+I+G4
+Best-fit model: K3Pu+F+I+G4 chosen according to BIC
+
+All model information printed to outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.model.gz
+CPU time for ModelFinder: 93.921 seconds (0h:1m:33s)
+Wall-clock time for ModelFinder: 50.732 seconds (0h:0m:50s)
+Generating 1000 samples for ultrafast bootstrap (seed: 291393)...
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 0.364 / Estimate: 0.000, 0.104 / LogL: -7050.055
+Init pinv, alpha: 0.097, 0.364 / Estimate: 0.581, 0.331 / LogL: -6993.758
+Init pinv, alpha: 0.193, 0.364 / Estimate: 0.581, 0.332 / LogL: -6993.756
+Init pinv, alpha: 0.290, 0.364 / Estimate: 0.579, 0.330 / LogL: -6993.802
+Init pinv, alpha: 0.387, 0.364 / Estimate: 0.579, 0.330 / LogL: -6993.799
+Init pinv, alpha: 0.484, 0.364 / Estimate: 0.580, 0.331 / LogL: -6993.769
+Init pinv, alpha: 0.580, 0.364 / Estimate: 0.589, 0.345 / LogL: -6993.503
+Init pinv, alpha: 0.677, 0.364 / Estimate: 0.673, 0.528 / LogL: -6992.359
+Init pinv, alpha: 0.774, 0.364 / Estimate: 0.712, 0.701 / LogL: -6993.038
+Init pinv, alpha: 0.870, 0.364 / Estimate: 0.711, 0.698 / LogL: -6993.040
+Optimal pinv,alpha: 0.673, 0.528 / LogL: -6992.359
+
+Parameters optimization took 0.958 sec
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009357 sec (of wall-clock time) 0.016616 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.007127 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -7472.880
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.217 second
+Computing log-likelihood of 98 initial trees ... 0.152 seconds
+Current best score: -6992.359
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6992.355
+Iteration 10 / LogL: -6994.701 / Time: 0h:0m:1s
+Iteration 20 / LogL: -6992.369 / Time: 0h:0m:2s
+Finish initializing candidate tree set (3)
+Current best tree score: -6992.355 / CPU time: 0.983
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6995.025 / Time: 0h:0m:2s (0h:0m:5s left)
+Iteration 40 / LogL: -6993.218 / Time: 0h:0m:2s (0h:0m:4s left)
+Iteration 50 / LogL: -6992.376 / Time: 0h:0m:3s (0h:0m:3s left)
+Log-likelihood cutoff on original alignment: -7017.980
+Iteration 60 / LogL: -6998.003 / Time: 0h:0m:3s (0h:0m:2s left)
+Iteration 70 / LogL: -6992.436 / Time: 0h:0m:4s (0h:0m:1s left)
+Iteration 80 / LogL: -6992.788 / Time: 0h:0m:4s (0h:0m:1s left)
+Iteration 90 / LogL: -6992.434 / Time: 0h:0m:5s (0h:0m:0s left)
+Iteration 100 / LogL: -6993.283 / Time: 0h:0m:5s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -7019.459
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:5s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6992.355
+Optimal log-likelihood: -6992.353
+Rate parameters:  A-C: 1.00000  A-G: 20.45365  A-T: 4.82818  C-G: 4.82818  C-T: 20.45365  G-T: 1.00000
+Base frequencies:  A: 0.266  C: 0.180  G: 0.221  T: 0.332
+Proportion of invariable sites: 0.672
+Gamma shape alpha: 0.528
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -6992.353
+Creating bootstrap support values...
+Split supports printed to NEXUS file outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.splits.nex
+Total tree length: 0.784
+
+Total number of iterations: 102
+CPU time used for tree search: 8.566 sec (0h:0m:8s)
+Wall-clock time used for tree search: 4.508 sec (0h:0m:4s)
+Total CPU time used: 10.671 sec (0h:0m:10s)
+Total wall-clock time used: 5.645 sec (0h:0m:5s)
+
+Computing bootstrap consensus tree...
+Reading input file outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.splits.nex...
+54 taxa and 315 splits.
+Consensus tree written to outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.contree
+Reading input trees file outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.contree
+Log-likelihood of consensus tree: -6992.388
+
+Analysis results written to: 
+  IQ-TREE report:                outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.iqtree
+  Maximum-likelihood tree:       outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.treefile
+  Likelihood distances:          outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.splits.nex
+  Consensus tree:                outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.contree
+  Screen log file:               outputs/06_tree/03_iqtree_no_partitioning_without_site_removal/auriculella_phylogeny_03_iqtree_no_partitioning_without_site_removal.log
+
+Date and Time: Fri Jun 20 16:20:17 2025

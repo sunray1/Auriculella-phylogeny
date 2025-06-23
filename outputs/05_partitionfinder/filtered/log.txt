@@ -1,0 +1,82 @@
+INFO     | 2025-06-20 16:14:48,402 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2025-06-20 16:14:48,405 | config     | Setting 'alignment' to 'FcC_supermatrix.phy'
+INFO     | 2025-06-20 16:14:48,405 | config     | Setting 'branchlengths' to 'unlinked'
+INFO     | 2025-06-20 16:14:48,406 | parser     | You set 'models' to: all
+INFO     | 2025-06-20 16:14:48,414 | model_load | This analysis will use the following 3 models of molecular evolution
+INFO     | 2025-06-20 16:14:48,414 | model_load | GTR, GTR+G, GTR+I+G
+INFO     | 2025-06-20 16:14:48,415 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2025-06-20 16:14:48,415 | config     | Setting 'search' to 'greedy'
+INFO     | 2025-06-20 16:14:48,415 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2025-06-20 16:14:48,415 | config     | Looking for alignment file './FcC_supermatrix.phy'...
+INFO     | 2025-06-20 16:14:48,416 | threadpool | Using 20 cpus
+INFO     | 2025-06-20 16:14:48,416 | analysis   | Beginning Analysis
+INFO     | 2025-06-20 16:14:48,482 | alignment  | Reading alignment file './FcC_supermatrix.phy'
+INFO     | 2025-06-20 16:14:48,503 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2025-06-20 16:14:48,507 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2025-06-20 16:14:48,513 | raxml      | Using a separate GTR+G model for each data block
+INFO     | 2025-06-20 16:14:51,127 | raxml      | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2025-06-20 16:14:56,536 | raxml      | ML topology estimation finished
+INFO     | 2025-06-20 16:14:56,545 | analysis_m | Performing Greedy Analysis
+INFO     | 2025-06-20 16:14:56,546 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2025-06-20 16:14:59,760 | progress   |       Finished subset 1/5, 20.00 percent done
+INFO     | 2025-06-20 16:15:00,055 | progress   |       Finished subset 2/5, 40.00 percent done
+INFO     | 2025-06-20 16:15:00,125 | progress   |       Finished subset 3/5, 60.00 percent done
+INFO     | 2025-06-20 16:15:00,298 | progress   |       Finished subset 4/5, 80.00 percent done
+INFO     | 2025-06-20 16:15:00,504 | progress   |       Finished subset 5/5, 100.00 percent done
+INFO     | 2025-06-20 16:15:00,522 | analysis_m |    ***Greedy algorithm step 1***
+INFO     | 2025-06-20 16:15:00,523 | analysis_m |       Analysing 10 new subset pairs
+INFO     | 2025-06-20 16:15:05,730 | progress   |       Finished subset 1/10, 10.00 percent done
+INFO     | 2025-06-20 16:15:06,057 | progress   |       Finished subset 2/10, 20.00 percent done
+INFO     | 2025-06-20 16:15:06,183 | progress   |       Finished subset 3/10, 30.00 percent done
+INFO     | 2025-06-20 16:15:06,263 | progress   |       Finished subset 4/10, 40.00 percent done
+INFO     | 2025-06-20 16:15:06,326 | progress   |       Finished subset 5/10, 50.00 percent done
+INFO     | 2025-06-20 16:15:06,410 | progress   |       Finished subset 6/10, 60.00 percent done
+INFO     | 2025-06-20 16:15:06,642 | progress   |       Finished subset 7/10, 70.00 percent done
+INFO     | 2025-06-20 16:15:06,780 | progress   |       Finished subset 8/10, 80.00 percent done
+INFO     | 2025-06-20 16:15:06,837 | progress   |       Finished subset 9/10, 90.00 percent done
+INFO     | 2025-06-20 16:15:06,953 | progress   |       Finished subset 10/10, 100.00 percent done
+INFO     | 2025-06-20 16:15:06,955 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2025-06-20 16:15:06,956 | analysis_m |       Best scheme combines subsets: '16S' and 'COI-5P_pos3'
+INFO     | 2025-06-20 16:15:06,956 | analysis_m |       The best scheme improves the aicc score by 236133.78 to 421108.0
+INFO     | 2025-06-20 16:15:06,967 | analysis_m |    ***Greedy algorithm step 2***
+INFO     | 2025-06-20 16:15:06,967 | analysis_m |       Analysing 3 new subset pairs
+INFO     | 2025-06-20 16:15:08,102 | progress   |       Finished subset 1/3, 33.33 percent done
+INFO     | 2025-06-20 16:15:08,177 | progress   |       Finished subset 2/3, 66.67 percent done
+INFO     | 2025-06-20 16:15:08,223 | progress   |       Finished subset 3/3, 100.00 percent done
+INFO     | 2025-06-20 16:15:08,224 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2025-06-20 16:15:08,225 | analysis_m |       Best scheme combines subsets: 'COI-5P_pos2' and 'COI-5P_pos1'
+INFO     | 2025-06-20 16:15:08,225 | analysis_m |       The best scheme improves the aicc score by 181844.44 to 239263.5
+INFO     | 2025-06-20 16:15:08,239 | analysis_m |    ***Greedy algorithm step 3***
+INFO     | 2025-06-20 16:15:08,239 | analysis_m |       Analysing 2 new subset pairs
+INFO     | 2025-06-20 16:15:09,141 | progress   |       Finished subset 1/2, 50.00 percent done
+INFO     | 2025-06-20 16:15:09,183 | progress   |       Finished subset 2/2, 100.00 percent done
+INFO     | 2025-06-20 16:15:09,184 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2025-06-20 16:15:09,184 | analysis_m |       Best scheme combines subsets: '16S, COI-5P_pos3' and 'COI-5P_pos2, COI-5P_pos1'
+INFO     | 2025-06-20 16:15:09,184 | analysis_m |       The best scheme improves the aicc score by 226884.11 to 12399.7
+INFO     | 2025-06-20 16:15:09,196 | analysis_m |    ***Greedy algorithm step 4***
+INFO     | 2025-06-20 16:15:09,196 | analysis_m |       Analysing 1 new subset pairs
+INFO     | 2025-06-20 16:15:09,859 | progress   |       Finished subset 1/1, 100.00 percent done
+INFO     | 2025-06-20 16:15:09,860 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2025-06-20 16:15:09,861 | analysis_m |       Best scheme combines subsets: '28S' and '16S, COI-5P_pos3, COI-5P_pos2, COI-5P_pos1'
+INFO     | 2025-06-20 16:15:09,861 | analysis_m |       The best scheme improves the aicc score by 6433.03 to 5966.7
+INFO     | 2025-06-20 16:15:09,876 | analysis_m |    Greedy algorithm finished after 5 steps
+INFO     | 2025-06-20 16:15:09,876 | analysis_m |    Best scoring scheme is scheme step_4, with aicc score of 5966.699
+INFO     | 2025-06-20 16:15:09,881 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2025-06-20 16:15:09,889 | model_util |    
+INFO     | 2025-06-20 16:15:09,889 | model_util |    
+INFO     | 2025-06-20 16:15:09,889 | model_util |    *Citations for this analysis*
+INFO     | 2025-06-20 16:15:09,889 | model_util |    -----------------------------
+INFO     | 2025-06-20 16:15:09,889 | model_util |    
+INFO     | 2025-06-20 16:15:09,889 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2025-06-20 16:15:09,889 | model_util |    
+INFO     | 2025-06-20 16:15:09,889 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2025-06-20 16:15:09,890 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2025-06-20 16:15:09,890 | model_util |    
+INFO     | 2025-06-20 16:15:09,890 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2025-06-20 16:15:09,890 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2025-06-20 16:15:09,890 | model_util |    
+INFO     | 2025-06-20 16:15:09,890 | model_util |    Your analysis also used RAxML, so please cite:
+INFO     | 2025-06-20 16:15:09,890 | model_util |    Stamatakis, A. (2014). RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies. Bioinformatics, 30(9), 1312-1313.
+INFO     | 2025-06-20 16:15:09,890 | model_util |    
+INFO     | 2025-06-20 16:15:09,906 | main       | Total processing time: 0:00:21 (h:m:s)
+INFO     | 2025-06-20 16:15:09,906 | main       | Processing complete.

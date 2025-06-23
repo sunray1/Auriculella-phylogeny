@@ -1,0 +1,78 @@
+Scheme Name       : step_1
+Scheme lnL        : -6211.189
+Scheme AICc       : 13921.220267063465
+Number of params  : 570
+Number of sites   : 2385
+Number of subsets : 5
+
+Subset | Best Model | # sites    | subset id                        | Partition names                                                                                     
+1      | GTR+I+G    | 218        | 9821095e85d93b603acfbcb2ae0cdc94 | COI-5P_pos1                                                                                         
+2      | GTR        | 218        | a2e450632207d4905ab37f027fa0e514 | COI-5P_pos2                                                                                         
+3      | GTR+G      | 218        | ba9f082a26bd97493e38f1a7b891a449 | COI-5P_pos3                                                                                         
+4      | GTR        | 1260       | 36aa3299148dacf24ca97991fb83bb18 | ITS, 28S                                                                                            
+5      | GTR+I+G    | 471        | 403efc0f280f5842fd00520b9345a06d | 16S                                                                                                 
+
+
+Scheme Description in PartitionFinder format
+Scheme_step_1 = (COI-5P_pos1) (COI-5P_pos2) (COI-5P_pos3) (ITS, 28S) (16S);
+
+Nexus formatted character sets
+begin sets;
+	charset Subset1 = 1-654\3;
+	charset Subset2 = 2-654\3;
+	charset Subset3 = 3-654\3;
+	charset Subset4 = 655-1376 1848-2385;
+	charset Subset5 = 1377-1847;
+	charpartition PartitionFinder = Group1:Subset1, Group2:Subset2, Group3:Subset3, Group4:Subset4, Group5:Subset5;
+end;
+
+
+Nexus formatted character sets for IQtree
+Warning: the models written in the charpartition are just the best model found in this analysis. Not all models are available in IQtree, so you may need to set up specific model lists for your analysis
+
+#nexus
+begin sets;
+	charset Subset1 = 1-654\3;
+	charset Subset2 = 2-654\3;
+	charset Subset3 = 3-654\3;
+	charset Subset4 = 655-1376 1848-2385;
+	charset Subset5 = 1377-1847;
+	charpartition PartitionFinder = GTR+I+G:Subset1, GTR:Subset2, GTR+G:Subset3, GTR:Subset4, GTR+I+G:Subset5;
+end;
+
+
+RaxML-style partition definitions
+Warning: RAxML allows for only a single model of rate heterogeneity in partitioned analyses. I.e. all partitions must be assigned one of three types of model: No heterogeneity (e.g. GTR); +G (e.g. GTR+G); or +I+G (e.g. GTR+I+G). If the best models for your datasetcontain different types of model for different subsets you will need to decide on the best rate heterogeneity model before you run RAxML. If you prefer to do things more rigorously, you can run separate PartitionFinder analyses for each type of rate heterogenetity Then choose the scheme with the lowest AIC/AICc/BIC score. Note that these re-runs will be quick!
+
+DNA, Subset1 = 1-654\3
+DNA, Subset2 = 2-654\3
+DNA, Subset3 = 3-654\3
+DNA, Subset4 = 655-1376, 1848-2385
+DNA, Subset5 = 1377-1847
+
+
+MrBayes block for partition definitions
+Warning: MrBayes only allows a relatively small collection of models. If any model in your analysis is not one that is included in MrBayes (e.g. by setting nst = 1, 2, or 6 for DNA sequences; or is not in the available list of protein models for MrBayes)then this MrBayes block will just set that model to nst = 6 for DNA, or 'wag' for Protein. Similarly, the only additional parameters that this MrBayes block will include are +I and +G. Other  parameters, such as +F and +X, are ignored. If you want to use this MrBayes block for your analysis, please make sure to check it carefully before you use it we've done our best to make it accurate, but there may be errors that remain!
+
+begin mrbayes;
+
+	charset Subset1 = 1-654\3;
+	charset Subset2 = 2-654\3;
+	charset Subset3 = 3-654\3;
+	charset Subset4 = 655-1376 1848-2385;
+	charset Subset5 = 1377-1847;
+
+	partition PartitionFinder = 5:Subset1, Subset2, Subset3, Subset4, Subset5;
+	set partition=PartitionFinder;
+
+	lset applyto=(1) nst=6 rates=invgamma;
+	lset applyto=(2) nst=6;
+	lset applyto=(3) nst=6 rates=gamma;
+	lset applyto=(4) nst=6;
+	lset applyto=(5) nst=6 rates=invgamma;
+
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+	unlink brlens=(all);
+
+end;

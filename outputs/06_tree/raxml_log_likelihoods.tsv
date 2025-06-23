@@ -1,0 +1,3 @@
+label	log_likelihood
+01_raxml_partitioning_without_site_removal	-6584.728534
+02_raxml_partitioning_with_site_removal	-2765.382944

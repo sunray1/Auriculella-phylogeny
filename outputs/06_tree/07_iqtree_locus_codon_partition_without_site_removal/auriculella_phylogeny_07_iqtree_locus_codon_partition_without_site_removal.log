@@ -1,0 +1,390 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    TCLASOL-13PJMX3 (AVX2, FMA3, 31 GB RAM)
+Command: iqtree -s outputs/04_supermatrix/original/FcC_supermatrix.fas -p outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_partitions.txt -redo -nt AUTO -bb 1000 -pre outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal
+Seed:    50 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jun 20 16:23:33 2025
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading partition model file outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_partitions.txt ...
+Reading alignment file outputs/04_supermatrix/original/FcC_supermatrix.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 54 sequences with 2385 columns, 285 distinct patterns
+244 parsimony-informative, 65 singleton sites, 2076 constant sites
+                                                  Gap/Ambiguity  Composition  p-value
+   1  ACHA045-20_HLS20816_Auriculella_turritella         72.58%    failed      0.00%
+   2  ACHA007-20_HLS20655_Auriculella_malleata           30.99%    passed     98.02%
+   3  ACHA032-20_HLS20127_Auriculella_uniplicata         50.02%    failed      0.07%
+   4  ACHA012-20_HLS20649_Auriculella_tenella            31.07%    passed     86.53%
+   5  ACHA022-20_HLS20335_Auriculella_turritella         50.02%    failed      0.18%
+   6  ACHA026-20_HLS20336_Auriculella_turritella         50.02%    failed      0.15%
+   7  ACHA043-20_HLS21744_Auriculella_ambusta            72.58%    failed      0.00%
+   8  ACHA048-20_HLS20198_Auriculella_turritella         72.58%    failed      0.00%
+   9  ACHA025-20_HLS20708_Auriculella_uniplicata         50.02%    failed      0.15%
+  10  ACHA008-20_HLS20187_Auriculella_perpusilla         30.99%    passed     92.70%
+  11  ACHA046-20_HLS20536_Auriculella_gagneorum          72.58%    failed      0.00%
+  12  ACHA011-20_HLS20137_Auriculella_gagneorum          31.07%    passed     86.17%
+  13  ACHA001-20_HLS20486_Tornatellaria_sp               30.86%    passed     93.90%
+  14  ACHA044-20_HLS20879_Auriculella_ambusta            72.58%    failed      0.00%
+  15  ACHA030-20_HLS20153_Auriculella_turritella         50.02%    failed      0.11%
+  16  ACHA036-20_HLS20183_Auriculella_ambusta            50.02%    failed      0.03%
+  17  ACHA028-20_HLS20149_Auriculella_uniplicata         50.02%    failed      0.15%
+  18  ACHA038-20_HLS21113_Auriculella_malleata           51.19%    failed      0.08%
+  19  ACHA002-20_HLS20002_Tornatellides_sp               31.24%    passed     67.53%
+  20  ACHA050-20_HLS20539_Auriculella_gagneorum          72.58%    failed      0.00%
+  21  ACHA010-20_HLS20134_Auriculella_tenella            31.03%    passed     86.49%
+  22  ACHA005-20_HLS20091_Auriculella_perpusilla         30.99%    passed     91.39%
+  23  ACHA033-20_HLS20459_Auriculella_crassula           50.02%    failed      0.27%
+  24  ACHA031-20_HLS20126_Auriculella_uniplicata         50.02%    failed      0.08%
+  25  ACHA009-20_HLS20647_Auriculella_tenella            31.07%    passed     88.25%
+  26  ACHA018-20_HLS20747_Auriculella_ambusta            53.54%    failed      0.00%
+  27  ACHA029-20_HLS20186_Auriculella_gagneorum          50.02%    failed      0.26%
+  28  ACHA042-20_HLS20524_Auriculella_tenella            72.58%    failed      0.00%
+  29  ACHA047-20_HLS20723_Auriculella_malleata           72.58%    failed      0.00%
+  30  ACHA004-20_HLS20609_Auriculella_crassula           30.94%    passed     84.13%
+  31  ACHA051-20_HLS20461_Auriculella_turritella         72.58%    failed      0.00%
+  32  ACHA015-20_HLS20185_Auriculella_gagneorum          31.07%    passed     76.92%
+  33  ACHA034-20_HLS20130_Auriculella_uniplicata         50.02%    failed      0.09%
+  34  ACHA037-20_HLS20131_Auriculella_uniplicata         50.02%    failed      0.07%
+  35  ACHA023-20_HLS20607_Auriculella_crassula           50.02%    failed      0.34%
+  36  ACHA052-20_HLS20232_Auriculella_perversa           72.58%    failed      0.00%
+  37  ACHA006-20_HLS20597_Auriculella_crassula           30.99%    passed     86.12%
+  38  ACHA019-20_HLS20347_Auriculella_tenella            53.58%    failed      0.00%
+  39  ACHA017-20_HLS20878_Auriculella_gagneorum          53.63%    failed      0.00%
+  40  ACHA040-20_HLS21703_Auriculella_perpusilla         72.58%    failed      0.00%
+  41  ACHA003-20_HLS20637_Auriculella_crassula           30.99%    passed     77.96%
+  42  ACHA035-20_HLS20702_Auriculella_uniplicata         50.02%    failed      0.12%
+  43  ACHA024-20_HLS20454_Auriculella_crassula           50.02%    failed      0.23%
+  44  ACHA014-20_HLS20730_Auriculella_malleata           32.62%    passed     76.26%
+  45  ACHA021-20_HLS21114_Auriculella_malleata           50.02%    failed      0.22%
+  46  ACHA216-22_PCMB54681_Tornatellides_subperforatus    1.64%    failed      0.00%
+  47  ACHA041-20_HLS20731_Auriculella_malleata           73.63%    failed      0.00%
+  48  ACHA027-20_HLS20138_Auriculella_gagneorum          50.02%    failed      0.18%
+  49  ACHA016-20_HLS20184_Auriculella_ambusta            30.99%    passed     84.93%
+  50  ACHA013-20_HLS20458_Auriculella_crassula           30.99%    passed     93.36%
+  51  ACHA049-20_HLS21154_Auriculella_montana            73.63%    failed      0.00%
+  52  ACHA020-20_HLS20595_Auriculella_crassula           50.02%    failed      0.29%
+  53  ACHA053-20_HLS21612_Auriculella_perversa           72.58%    failed      0.00%
+  54  ACHA039-20_HLS21705_Auriculella_perpusilla         72.58%    failed      0.00%
+WARNING: 37 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                              50.05%  38 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	20	471	70	371	GTR	16S
+2	DNA	36	538	12	519	GTR	28S
+3	DNA	54	218	28	188	GTR	COI-5P_pos1
+4	DNA	54	218	0	217	GTR	COI-5P_pos2
+WARNING: No parsimony-informative sites in partition COI-5P_pos2
+5	DNA	54	218	134	59	GTR	COI-5P_pos3
+6	DNA	3	722	0	722	GTR	ITS
+WARNING: No variant sites in partition ITS
+Degree of missing data: 0.485
+Info: multi-threading strategy over partitions
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 50)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+1434 trees examined
+Threads: 1 / Time: 20.013 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -12576
+Threads: 2 / Time: 15.520 sec / Speedup: 1.290 / Efficiency: 64% / LogL: -12576
+Threads: 3 / Time: 14.398 sec / Speedup: 1.390 / Efficiency: 46% / LogL: -12576
+BEST NUMBER OF THREADS: 2
+
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -7738.344
+Current log-likelihood at step 1: -6518.630
+Current log-likelihood at step 2: -6470.037
+Current log-likelihood at step 3: -6465.031
+Current log-likelihood at step 4: -6463.259
+Current log-likelihood at step 5: -6455.839
+Current log-likelihood at step 6: -6455.251
+Current log-likelihood at step 7: -6454.790
+Current log-likelihood at step 8: -6454.388
+Current log-likelihood at step 9: -6454.031
+Current log-likelihood at step 10: -6453.705
+Current log-likelihood at step 11: -6453.416
+Current log-likelihood at step 12: -6453.158
+Current log-likelihood at step 13: -6452.918
+Current log-likelihood at step 14: -6452.691
+Current log-likelihood at step 15: -6452.473
+Current log-likelihood at step 16: -6452.271
+Current log-likelihood at step 17: -6452.057
+Current log-likelihood at step 18: -6451.851
+Current log-likelihood at step 19: -6451.650
+Current log-likelihood at step 20: -6451.460
+Current log-likelihood at step 21: -6451.277
+Current log-likelihood at step 22: -6451.101
+Current log-likelihood at step 23: -6450.931
+Current log-likelihood at step 24: -6450.768
+Current log-likelihood at step 25: -6450.609
+Current log-likelihood at step 26: -6450.457
+Current log-likelihood at step 27: -6450.311
+Current log-likelihood at step 28: -6450.169
+Current log-likelihood at step 29: -6450.032
+Current log-likelihood at step 30: -6449.901
+Current log-likelihood at step 31: -6449.775
+Current log-likelihood at step 32: -6449.652
+Current log-likelihood at step 33: -6449.532
+Current log-likelihood at step 34: -6449.417
+Current log-likelihood at step 35: -6449.304
+Current log-likelihood at step 36: -6449.196
+Current log-likelihood at step 37: -6449.090
+Current log-likelihood at step 38: -6448.988
+Current log-likelihood at step 39: -6448.890
+Partition-specific rates:  0.865 0.080 0.596 0.073 7.947 0.077
+Parameters optimization took 38 rounds (0.208 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000110 sec (of wall-clock time) 0.000105 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.005884 sec (of wall-clock time) 0.002647 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -9728.571
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.308 second
+Computing log-likelihood of 98 initial trees ... 0.278 seconds
+Current best score: -6435.609
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -6431.417
+Current log-likelihood at step 1: -6431.021
+Current log-likelihood at step 2: -6430.807
+Current log-likelihood at step 3: -6430.662
+Current log-likelihood at step 4: -6430.543
+Current log-likelihood at step 5: -6430.444
+Parameters optimization took 4 rounds (0.026 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -6430.444
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -6429.713
+Current log-likelihood at step 1: -6429.103
+Current log-likelihood at step 2: -6429.007
+Parameters optimization took 1 rounds (0.015 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -6429.007
+Iteration 10 / LogL: -6436.998 / Time: 0h:0m:51s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -6427.886
+Current log-likelihood at step 1: -6427.704
+Current log-likelihood at step 2: -6427.614
+Parameters optimization took 1 rounds (0.009 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 12: -6427.614
+Iteration 20 / LogL: -6430.265 / Time: 0h:0m:52s
+Finish initializing candidate tree set (12)
+Current best tree score: -6427.614 / CPU time: 1.724
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -6427.610
+Iteration 30 / LogL: -6428.670 / Time: 0h:0m:52s (0h:2m:28s left)
+Iteration 40 / LogL: -6428.295 / Time: 0h:0m:53s (0h:1m:38s left)
+Iteration 50 / LogL: -6428.027 / Time: 0h:0m:53s (0h:1m:7s left)
+Log-likelihood cutoff on original alignment: -6465.257
+Iteration 60 / LogL: -6428.014 / Time: 0h:0m:54s (0h:0m:47s left)
+Iteration 70 / LogL: -6588.060 / Time: 0h:0m:54s (0h:0m:33s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -6426.469
+Current log-likelihood at step 1: -6426.302
+Current log-likelihood at step 2: -6426.215
+Parameters optimization took 1 rounds (0.009 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 73: -6426.215
+Iteration 80 / LogL: -6427.887 / Time: 0h:0m:55s (0h:1m:5s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -6426.051
+Current log-likelihood at step 1: -6425.981
+Parameters optimization took 0 rounds (0.004 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 83: -6425.981
+Iteration 90 / LogL: -6425.999 / Time: 0h:0m:56s (0h:0m:58s left)
+UPDATE BEST LOG-LIKELIHOOD: -6425.979
+Iteration 100 / LogL: -6425.984 / Time: 0h:0m:56s (0h:0m:47s left)
+Log-likelihood cutoff on original alignment: -6465.257
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -6426.688 / Time: 0h:0m:57s (0h:0m:47s left)
+Iteration 120 / LogL: -6430.310 / Time: 0h:0m:57s (0h:0m:38s left)
+Iteration 130 / LogL: -6425.982 / Time: 0h:0m:58s (0h:0m:31s left)
+Iteration 140 / LogL: -6426.111 / Time: 0h:0m:59s (0h:0m:25s left)
+Iteration 150 / LogL: -6426.811 / Time: 0h:0m:59s (0h:0m:19s left)
+Log-likelihood cutoff on original alignment: -6465.257
+Iteration 160 / LogL: -6428.878 / Time: 0h:1m:0s (0h:0m:15s left)
+Iteration 170 / LogL: -6426.643 / Time: 0h:1m:0s (0h:0m:10s left)
+Iteration 180 / LogL: -6425.983 / Time: 0h:1m:1s (0h:0m:6s left)
+Iteration 190 / LogL: -6426.834 / Time: 0h:1m:1s (0h:0m:3s left)
+Iteration 200 / LogL: -6426.754 / Time: 0h:1m:2s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -6462.614
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:1m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -6425.979
+Current log-likelihood at step 1: -6425.913
+Current log-likelihood at step 2: -6425.848
+Current log-likelihood at step 3: -6425.785
+Current log-likelihood at step 4: -6425.724
+Current log-likelihood at step 5: -6425.664
+Current log-likelihood at step 6: -6425.605
+Current log-likelihood at step 7: -6425.548
+Current log-likelihood at step 8: -6425.489
+Current log-likelihood at step 9: -6425.435
+Current log-likelihood at step 10: -6425.381
+Current log-likelihood at step 11: -6425.329
+Current log-likelihood at step 12: -6425.277
+Current log-likelihood at step 13: -6425.227
+Current log-likelihood at step 14: -6425.178
+Current log-likelihood at step 15: -6425.130
+Current log-likelihood at step 16: -6425.083
+Current log-likelihood at step 17: -6425.037
+Current log-likelihood at step 18: -6424.992
+Current log-likelihood at step 19: -6424.948
+Current log-likelihood at step 20: -6424.904
+Current log-likelihood at step 21: -6424.862
+Current log-likelihood at step 22: -6424.820
+Current log-likelihood at step 23: -6424.780
+Current log-likelihood at step 24: -6424.738
+Current log-likelihood at step 25: -6424.699
+Current log-likelihood at step 26: -6424.660
+Current log-likelihood at step 27: -6424.622
+Current log-likelihood at step 28: -6424.585
+Current log-likelihood at step 29: -6424.549
+Current log-likelihood at step 30: -6424.513
+Current log-likelihood at step 31: -6424.478
+Current log-likelihood at step 32: -6424.444
+Current log-likelihood at step 33: -6424.410
+Current log-likelihood at step 34: -6424.377
+Current log-likelihood at step 35: -6424.344
+Current log-likelihood at step 36: -6424.313
+Current log-likelihood at step 37: -6424.281
+Current log-likelihood at step 38: -6424.250
+Current log-likelihood at step 39: -6424.220
+Current log-likelihood at step 40: -6424.190
+Current log-likelihood at step 41: -6424.161
+Current log-likelihood at step 42: -6424.132
+Current log-likelihood at step 43: -6424.104
+Current log-likelihood at step 44: -6424.076
+Current log-likelihood at step 45: -6424.049
+Current log-likelihood at step 46: -6424.022
+Current log-likelihood at step 47: -6423.996
+Current log-likelihood at step 48: -6423.970
+Current log-likelihood at step 49: -6423.944
+Current log-likelihood at step 50: -6423.919
+Current log-likelihood at step 51: -6423.894
+Current log-likelihood at step 52: -6423.870
+Current log-likelihood at step 53: -6423.843
+Current log-likelihood at step 54: -6423.820
+Current log-likelihood at step 55: -6423.797
+Current log-likelihood at step 56: -6423.774
+Current log-likelihood at step 57: -6423.751
+Current log-likelihood at step 58: -6423.729
+Current log-likelihood at step 59: -6423.707
+Current log-likelihood at step 60: -6423.686
+Current log-likelihood at step 61: -6423.665
+Current log-likelihood at step 62: -6423.644
+Current log-likelihood at step 63: -6423.623
+Current log-likelihood at step 64: -6423.603
+Current log-likelihood at step 65: -6423.584
+Current log-likelihood at step 66: -6423.563
+Current log-likelihood at step 67: -6423.543
+Current log-likelihood at step 68: -6423.525
+Current log-likelihood at step 69: -6423.505
+Current log-likelihood at step 70: -6423.485
+Current log-likelihood at step 71: -6423.465
+Current log-likelihood at step 72: -6423.445
+Current log-likelihood at step 73: -6423.426
+Current log-likelihood at step 74: -6423.407
+Current log-likelihood at step 75: -6423.388
+Current log-likelihood at step 76: -6423.370
+Current log-likelihood at step 77: -6423.352
+Current log-likelihood at step 78: -6423.334
+Current log-likelihood at step 79: -6423.317
+Current log-likelihood at step 80: -6423.300
+Current log-likelihood at step 81: -6423.283
+Current log-likelihood at step 82: -6423.266
+Current log-likelihood at step 83: -6423.249
+Current log-likelihood at step 84: -6423.233
+Current log-likelihood at step 85: -6423.217
+Current log-likelihood at step 86: -6423.201
+Current log-likelihood at step 87: -6423.186
+Current log-likelihood at step 88: -6423.170
+Current log-likelihood at step 89: -6423.155
+Current log-likelihood at step 90: -6423.140
+Current log-likelihood at step 91: -6423.126
+Current log-likelihood at step 92: -6423.111
+Current log-likelihood at step 93: -6423.097
+Current log-likelihood at step 94: -6423.082
+Current log-likelihood at step 95: -6423.068
+Current log-likelihood at step 96: -6423.054
+Current log-likelihood at step 97: -6423.041
+Current log-likelihood at step 98: -6423.027
+Current log-likelihood at step 99: -6423.014
+Partition-specific rates:  0.586 0.054 0.423 0.022 5.803 0.994
+Parameters optimization took 99 rounds (0.469 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.best_model.nex
+BEST SCORE FOUND : -6423.014
+Creating bootstrap support values...
+Split supports printed to NEXUS file outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.splits.nex
+Total tree length: 0.739
+
+Total number of iterations: 200
+CPU time used for tree search: 22.234 sec (0h:0m:22s)
+Wall-clock time used for tree search: 12.295 sec (0h:0m:12s)
+Total CPU time used: 111.122 sec (0h:1m:51s)
+Total wall-clock time used: 63.126 sec (0h:1m:3s)
+
+Computing bootstrap consensus tree...
+Reading input file outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.splits.nex...
+54 taxa and 356 splits.
+Consensus tree written to outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.contree
+Reading input trees file outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.contree
+Log-likelihood of consensus tree: -6426.091
+
+Analysis results written to: 
+  IQ-TREE report:                outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.iqtree
+  Maximum-likelihood tree:       outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.treefile
+  Likelihood distances:          outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.splits.nex
+  Consensus tree:                outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.contree
+  Screen log file:               outputs/06_tree/07_iqtree_locus_codon_partition_without_site_removal/auriculella_phylogeny_07_iqtree_locus_codon_partition_without_site_removal.log
+
+Date and Time: Fri Jun 20 16:24:36 2025

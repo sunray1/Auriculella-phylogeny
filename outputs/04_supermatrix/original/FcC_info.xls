@@ -3,69 +3,68 @@ SUPERMATRIX FILE	P CODING CHARACTERS [%]	P MISSING DATA [?] [%]	P INDELS [%]	P A
 supermatrix	49.952	0	0.290	49.759	10.231	20.040	YES	NO	NO
 
 FILE	START POSITION SUPERMATRIX	END POSITION SUPERMATRIX	N SEQUENCES	SEQUENCE TYPE	N CHARACTERS	N MISSING DATA [?]	N INDELS	N AMBIGUITIES	N PARSIMONY INFORMATIVE SITES	N GC CONTENT	N CODING CHARACTERS	A	C	G	T	U	N	Y	R	W	S	K	M	D	V	H	B	F	L	I	P	Q	E
-16S.aln	3762	4232	20	nu	9420	0	371	17	9032	2258	70	3233	994	1264	3541	0	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-28S.aln	4233	4770	36	nu	19368	0	0	0	19368	12715	12	3600	5940	6775	3053	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-COI-5P.aln	3108	3761	54	nu	35316	0	2	103	35211	10391	162	10182	4417	5974	14638	0	103	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-FcC_supermatrix	1	2385	54	nu	128790	0	373	64084	64333	25810	244	17148	11568	14242	21375	0	64084	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ITS.aln	2386	3107	1	nu	722	0	0	0	722	446	0	133	217	229	143	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-supermatrix	1	4770	54	nu	257580	0	746	128168	128666	51620	488	34296	23136	28484	42750	0	128168	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+16S.aln	1377	1847	20	nu	9420	0	371	17	9032	2258	70	3233	994	1264	3541	0	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+28S.aln	1848	2385	36	nu	19368	0	0	0	19368	12715	12	3600	5940	6775	3053	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+COI-5P.aln	1	654	54	nu	35316	0	2	103	35211	10391	162	10182	4417	5974	14638	0	103	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ITS.aln	655	1376	1	nu	722	0	0	0	722	446	0	133	217	229	143	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+supermatrix	1	2385	54	nu	128790	0	373	64084	64333	25810	244	17148	11568	14242	21375	0	64084	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 
 Taxon check
 Taxon	N CONCATENATED SEQs	N INFORMATIVE SEQs	N MISSING SEQs
-ACHA032-20_HLS20127_Auriculella_uniplicata	5	3	2
-ACHA030-20_HLS20153_Auriculella_turritella	5	3	2
-ACHA042-20_HLS20524_Auriculella_tenella	5	2	3
-ACHA002-20_HLS20002_Tornatellides_sp	5	4	1
-ACHA004-20_HLS20609_Auriculella_crassula	5	4	1
-ACHA040-20_HLS21703_Auriculella_perpusilla	5	2	3
-ACHA034-20_HLS20130_Auriculella_uniplicata	5	3	2
-ACHA216-22_PCMB54681_Tornatellides_subperforatus	5	5	0
-ACHA001-20_HLS20486_Tornatellaria_sp	5	4	1
-ACHA019-20_HLS20347_Auriculella_tenella	5	3	2
-ACHA033-20_HLS20459_Auriculella_crassula	5	3	2
-ACHA048-20_HLS20198_Auriculella_turritella	5	2	3
-ACHA020-20_HLS20595_Auriculella_crassula	5	3	2
-ACHA047-20_HLS20723_Auriculella_malleata	5	2	3
-ACHA035-20_HLS20702_Auriculella_uniplicata	5	3	2
-ACHA012-20_HLS20649_Auriculella_tenella	5	4	1
-ACHA028-20_HLS20149_Auriculella_uniplicata	5	3	2
-ACHA037-20_HLS20131_Auriculella_uniplicata	5	3	2
-ACHA009-20_HLS20647_Auriculella_tenella	5	4	1
-ACHA023-20_HLS20607_Auriculella_crassula	5	3	2
-ACHA053-20_HLS21612_Auriculella_perversa	5	2	3
-ACHA043-20_HLS21744_Auriculella_ambusta	5	2	3
-ACHA015-20_HLS20185_Auriculella_gagneorum	5	4	1
-ACHA036-20_HLS20183_Auriculella_ambusta	5	3	2
-ACHA021-20_HLS21114_Auriculella_malleata	5	3	2
-ACHA039-20_HLS21705_Auriculella_perpusilla	5	2	3
-ACHA007-20_HLS20655_Auriculella_malleata	5	4	1
-ACHA016-20_HLS20184_Auriculella_ambusta	5	4	1
-ACHA050-20_HLS20539_Auriculella_gagneorum	5	2	3
-ACHA026-20_HLS20336_Auriculella_turritella	5	3	2
-ACHA045-20_HLS20816_Auriculella_turritella	5	2	3
-ACHA029-20_HLS20186_Auriculella_gagneorum	5	3	2
-ACHA011-20_HLS20137_Auriculella_gagneorum	5	4	1
-ACHA051-20_HLS20461_Auriculella_turritella	5	2	3
-ACHA014-20_HLS20730_Auriculella_malleata	5	4	1
-ACHA008-20_HLS20187_Auriculella_perpusilla	5	4	1
-ACHA010-20_HLS20134_Auriculella_tenella	5	4	1
-ACHA027-20_HLS20138_Auriculella_gagneorum	5	3	2
-ACHA025-20_HLS20708_Auriculella_uniplicata	5	3	2
-ACHA044-20_HLS20879_Auriculella_ambusta	5	2	3
-ACHA003-20_HLS20637_Auriculella_crassula	5	4	1
-ACHA041-20_HLS20731_Auriculella_malleata	5	2	3
-ACHA031-20_HLS20126_Auriculella_uniplicata	5	3	2
-ACHA017-20_HLS20878_Auriculella_gagneorum	5	3	2
-ACHA038-20_HLS21113_Auriculella_malleata	5	3	2
-ACHA018-20_HLS20747_Auriculella_ambusta	5	3	2
-ACHA052-20_HLS20232_Auriculella_perversa	5	2	3
-ACHA013-20_HLS20458_Auriculella_crassula	5	4	1
-ACHA046-20_HLS20536_Auriculella_gagneorum	5	2	3
-ACHA022-20_HLS20335_Auriculella_turritella	5	3	2
-ACHA049-20_HLS21154_Auriculella_montana	5	2	3
-ACHA006-20_HLS20597_Auriculella_crassula	5	4	1
-ACHA005-20_HLS20091_Auriculella_perpusilla	5	4	1
-ACHA024-20_HLS20454_Auriculella_crassula	5	3	2
+ACHA038-20_HLS21113_Auriculella_malleata	4	2	2
+ACHA028-20_HLS20149_Auriculella_uniplicata	4	2	2
+ACHA036-20_HLS20183_Auriculella_ambusta	4	2	2
+ACHA044-20_HLS20879_Auriculella_ambusta	4	1	3
+ACHA030-20_HLS20153_Auriculella_turritella	4	2	2
+ACHA011-20_HLS20137_Auriculella_gagneorum	4	3	1
+ACHA001-20_HLS20486_Tornatellaria_sp	4	3	1
+ACHA042-20_HLS20524_Auriculella_tenella	4	1	3
+ACHA018-20_HLS20747_Auriculella_ambusta	4	2	2
+ACHA029-20_HLS20186_Auriculella_gagneorum	4	2	2
+ACHA009-20_HLS20647_Auriculella_tenella	4	3	1
+ACHA031-20_HLS20126_Auriculella_uniplicata	4	2	2
+ACHA033-20_HLS20459_Auriculella_crassula	4	2	2
+ACHA010-20_HLS20134_Auriculella_tenella	4	3	1
+ACHA050-20_HLS20539_Auriculella_gagneorum	4	1	3
+ACHA002-20_HLS20002_Tornatellides_sp	4	3	1
+ACHA005-20_HLS20091_Auriculella_perpusilla	4	3	1
+ACHA032-20_HLS20127_Auriculella_uniplicata	4	2	2
+ACHA022-20_HLS20335_Auriculella_turritella	4	2	2
+ACHA012-20_HLS20649_Auriculella_tenella	4	3	1
+ACHA007-20_HLS20655_Auriculella_malleata	4	3	1
+ACHA045-20_HLS20816_Auriculella_turritella	4	1	3
+ACHA046-20_HLS20536_Auriculella_gagneorum	4	1	3
+ACHA025-20_HLS20708_Auriculella_uniplicata	4	2	2
+ACHA008-20_HLS20187_Auriculella_perpusilla	4	3	1
+ACHA043-20_HLS21744_Auriculella_ambusta	4	1	3
+ACHA026-20_HLS20336_Auriculella_turritella	4	2	2
+ACHA048-20_HLS20198_Auriculella_turritella	4	1	3
+ACHA216-22_PCMB54681_Tornatellides_subperforatus	4	4	0
+ACHA021-20_HLS21114_Auriculella_malleata	4	2	2
+ACHA014-20_HLS20730_Auriculella_malleata	4	3	1
+ACHA053-20_HLS21612_Auriculella_perversa	4	1	3
+ACHA020-20_HLS20595_Auriculella_crassula	4	2	2
+ACHA039-20_HLS21705_Auriculella_perpusilla	4	1	3
+ACHA016-20_HLS20184_Auriculella_ambusta	4	3	1
+ACHA049-20_HLS21154_Auriculella_montana	4	1	3
+ACHA013-20_HLS20458_Auriculella_crassula	4	3	1
+ACHA041-20_HLS20731_Auriculella_malleata	4	1	3
+ACHA027-20_HLS20138_Auriculella_gagneorum	4	2	2
+ACHA023-20_HLS20607_Auriculella_crassula	4	2	2
+ACHA037-20_HLS20131_Auriculella_uniplicata	4	2	2
+ACHA052-20_HLS20232_Auriculella_perversa	4	1	3
+ACHA034-20_HLS20130_Auriculella_uniplicata	4	2	2
+ACHA051-20_HLS20461_Auriculella_turritella	4	1	3
+ACHA015-20_HLS20185_Auriculella_gagneorum	4	3	1
+ACHA004-20_HLS20609_Auriculella_crassula	4	3	1
+ACHA047-20_HLS20723_Auriculella_malleata	4	1	3
+ACHA024-20_HLS20454_Auriculella_crassula	4	2	2
+ACHA003-20_HLS20637_Auriculella_crassula	4	3	1
+ACHA035-20_HLS20702_Auriculella_uniplicata	4	2	2
+ACHA019-20_HLS20347_Auriculella_tenella	4	2	2
+ACHA040-20_HLS21703_Auriculella_perpusilla	4	1	3
+ACHA017-20_HLS20878_Auriculella_gagneorum	4	2	2
+ACHA006-20_HLS20597_Auriculella_crassula	4	3	1
 
 
 ------------------------------------------------------------

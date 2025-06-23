@@ -1,0 +1,5 @@
+DNA, Subset1 = 1-162\3
+DNA, Subset2 = 2-162\3
+DNA, Subset3 = 3-162\3
+DNA, Subset4 = 163-232
+DNA, Subset5 = 233-244

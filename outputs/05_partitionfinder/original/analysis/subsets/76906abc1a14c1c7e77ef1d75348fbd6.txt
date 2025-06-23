@@ -1,0 +1,10 @@
+Model selection results for subset: 76906abc1a14c1c7e77ef1d75348fbd6
+Subset alignment stored here: ./analysis/phylofiles/76906abc1a14c1c7e77ef1d75348fbd6.phy
+This subset contains the following data_blocks: 16S, COI-5P_pos3
+Number of columns in subset: 689
+Models are organised according to their AICc scores
+
+Model           | Parameters      | lnL             | AICc             | AIC             | BIC            
+b'GTR+I+G'      | 10              | -3668.1914      | 7356.7075        | 7356.383        | 7401.7354      
+b'GTR+G'        | 9               | -3682.2         | 7382.665         | 7382.4          | 7423.2173      
+b'GTR'          | 8               | -3966.2205      | 7948.653         | 7948.441        | 7984.7227      

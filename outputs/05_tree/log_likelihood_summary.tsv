@@ -1,6 +1,0 @@
-label	log_likelihood
-no_partitioning_without_site_removal	-6992.427501
-no_partitioning_with_site_removal	-5430.225400
-locus_partitioning_without_site_removal	-7101.246563
-locus_partitioning_with_site_removal	-2747.350506
-locus_codon_partition_without_site_removal	-6423.024577

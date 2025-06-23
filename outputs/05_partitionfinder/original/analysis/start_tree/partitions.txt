@@ -1,0 +1,6 @@
+DNA, Subset1 = 1-654\3
+DNA, Subset2 = 2-654\3
+DNA, Subset3 = 3-654\3
+DNA, Subset4 = 655-1376
+DNA, Subset5 = 1377-1847
+DNA, Subset6 = 1848-2385
